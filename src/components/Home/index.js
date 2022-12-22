@@ -5,12 +5,14 @@ import Apropos from "../Apropos";
 
 function Home() {
   return (
-    <body>
-      <Navbar />
-      <h1>Home</h1>
-      <Apropos />
-      <Footer />
-    </body>
+    <html>
+      <body>
+        <Navbar />
+        <h1>Home</h1>
+        <Apropos />
+        <Footer />
+      </body>
+    </html>
   );
 }
 
