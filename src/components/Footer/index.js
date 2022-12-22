@@ -1,6 +1,8 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../Footer/footer.scss';
+import copyright from '../../icones/copyright-solid.svg';
+import github from '../../icones/github.svg';
+import linkedin from '../../icones/linkedin.svg';
 
 
 function Footer() {
@@ -14,12 +16,12 @@ function Footer() {
             <div>
                 <span>Découvrez-moi ailleurs:</span>
                 <div className="reseauxSociaux">
-                    <FontAwesomeIcon icon="fa-brands fa-github" className="icon" />
-                    <FontAwesomeIcon icon="fa-brands fa-linkedin" className="icon" />
+                    <a target='_blanck' href="https://github.com/HugoMouchon"><img src={github} alt=""/></a>
+                    <a target='_blanck' href="https://www.linkedin.com/in/hugo-mouchon/"><img src={linkedin} alt="" /></a>
                 </div>
             </div>
-            <div>
-                <FontAwesomeIcon icon="fa-solid fa-copyright" /> <span>Tous droits réservés</span>
+            <div className="copyright">
+            <img src={copyright} alt="" /> <span>Tous droits réservés</span>
             </div>
         </footer>
     );

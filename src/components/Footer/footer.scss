@@ -1,4 +1,5 @@
 @use "../../sass/colors" as c;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .footer {
     display: flex;
@@ -10,6 +11,7 @@
     height: 50rem;
     background-color: c.$bg-default-color;
     color: c.$texte-default-color;
+    font-family: 'Poppins', sans-serif;
 
     .contact {
         display: flex;
@@ -20,11 +22,20 @@
     }
 
     .reseauxSociaux {
-        .icon {
-            color: black;
-            width: 3.2rem;
-            height: 3.2rem;
-        }
+        display: flex;
+        justify-content: center;
+        gap: 2.4rem;
+        padding-top: 2.4rem;
     }
 
+    img {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }

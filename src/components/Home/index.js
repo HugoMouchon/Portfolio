@@ -7,9 +7,9 @@ function Home() {
     <body>
       <Navbar />
       <h1>Home</h1>
-        <Footer/>
+      <Footer />
     </body>
   );
-} 
+}
 
 export default Home;
