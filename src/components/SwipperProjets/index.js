@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -12,7 +12,9 @@ export default function Swipper() {
     return (
         <>
             <section className="projet">
+
                 <h3>Mes Projets</h3>
+
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={30}
@@ -24,7 +26,7 @@ export default function Swipper() {
                     }}
                     navigation={true}
                     modules={[Pagination, Navigation]}
-                    className="mySwiper"
+
                 >
                     <SwiperSlide>Slide 1</SwiperSlide>
                     <SwiperSlide>Slide 2</SwiperSlide>
