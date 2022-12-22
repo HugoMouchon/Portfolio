@@ -2,15 +2,14 @@ import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import Apropos from "../Apropos";
-import SwipperProjet from "../SwipperProjets";
+import Swipper from "../SwipperProjets";
 
 function Home() {
   return (
     <html>
       <body>
         <Navbar />
-        <h1>Mes Projets</h1>
-        <SwipperProjet/>
+        <Swipper/>
         <Apropos />
         <Footer />
       </body>

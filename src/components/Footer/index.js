@@ -16,12 +16,12 @@ function Footer() {
             <div>
                 <span>Découvrez-moi ailleurs:</span>
                 <div className="reseauxSociaux">
-                    <a target='_blanck' href="https://github.com/HugoMouchon"><img src={github} alt=""/></a>
-                    <a target='_blanck' href="https://www.linkedin.com/in/hugo-mouchon/"><img src={linkedin} alt="" /></a>
+                    <a target='_blanck' href="https://github.com/HugoMouchon"><img src={github} alt="" /></a>
+                    <a target='_blanck' href="https://www.linkedin.com/in/hugo-mouchon/"><img src={linkedin} alt="" className="icone"/></a>
                 </div>
             </div>
             <div className="copyright">
-            <img src={copyright} alt="" /> <span>Tous droits réservés</span>
+            <img src={copyright} alt="" className="icone" /> <span>Tous droits réservés</span>
             </div>
         </footer>
     );
