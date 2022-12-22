@@ -5,8 +5,7 @@ function NotFound() {
   return (
     <body>
       <Navbar />
-      <h1>NOT FOUND</h1>
-      <h2>Vite + React + TS (Hamburger + Responsive + Router)</h2>
+      <h1>Je suis désolé, la page que vous recherché est introuvable</h1>
       <footer className="footer">
         <p className="footer-by">
           A project by{" "}

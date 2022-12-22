@@ -1,0 +1,30 @@
+@use "../../sass/colors" as c;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.4rem 0;
+    gap: 8rem;
+    height: 50rem;
+    background-color: c.$bg-default-color;
+    color: c.$texte-default-color;
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 2.4rem;
+    }
+
+    .reseauxSociaux {
+        .icon {
+            color: black;
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    }
+
+}
