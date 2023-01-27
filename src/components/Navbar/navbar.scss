@@ -1,7 +1,7 @@
 @use '../../sass/mixins.scss' as m;
 @use '../../sass/colors.scss' as c;
 
-.header {
+.nav {
        background: c.$bg-default-color;
        height: 12vh;
        padding: 0 1.5rem;
@@ -16,7 +16,7 @@
            overflow: hidden;
            color:  c.$texte-default-color;
            margin: 0 auto;
-           max-width: 1920px;
+           max-width: 1920px;  
            height: 100%;
            display: flex;
            align-items: center;
