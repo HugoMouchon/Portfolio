@@ -1,0 +1,11 @@
+.list_languages {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+        .language-icon {
+            height: 40px;
+            padding: 0;
+            align-items: center;
+        }
+}

@@ -1,0 +1,18 @@
+@use './sass/colors' as c;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    // Rédéfinir la taille par défaut d'1 rem => 10px plutôt que 16px de base
+    font-size: 62.5%;
+}
+
+body {
+    // On rédéfinit une taille par défaut à 16px
+    font-size: 1.6rem;
+    margin: 0;
+    background-color: c.$bg-default-color;
+    color: c.$texte-default-color;
+}
