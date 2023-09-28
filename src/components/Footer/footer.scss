@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 6.4rem 0;
+    padding: 2.4rem 0;
     gap: 8rem;
     background-color: c.$bg-default-color;
     color: c.$texte-default-color;
@@ -43,7 +43,13 @@
         gap: 1rem;
     }
 
-    .icone {
+    .icone-linkedin {
         color: c.$texte-default-color;
+        width: 30px;
+    }
+
+    .icone-copyright {
+        color: c.$texte-default-color;
+        width: 20px;
     }
 }

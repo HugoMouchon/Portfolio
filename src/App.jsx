@@ -1,6 +1,6 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProjectN1 from "./pages/ProjetN°1";
+import MenuProjects from "./pages/MenuProjects/menuProjects";
 import ProjectN2 from "./pages/ProjetN°2";
 import ProjectN3 from "./pages/ProjetN°3";
 import ProjectN4 from "./pages/ProjetN°4";
@@ -15,7 +15,7 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="titre-projet1" element={<ProjectN1 />} />
+          <Route path="Menu-Projects" element={<MenuProjects />} />
           <Route path="titre-projet2" element={<ProjectN2 />} />
           <Route path="titre-projet3" element={<ProjectN3 />} />
           <Route path="titre-projet4" element={<ProjectN4 />} />

@@ -16,11 +16,11 @@
 
     h3 {
         font-size: 4rem;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.2rem;
         font-family: 'Philosopher', sans-serif;
         margin: 0;
-        color: c.$title-h-color;
-        border-bottom: 2px solid #49858D;
+        color: #bdebff;
+        border-bottom: 2px solid #bdebff;
         padding-bottom: 12px;
     }
 
@@ -44,17 +44,31 @@
         animation: none;
     }
 
+    .cv-link {
+        font-family: 'Philosopher', sans-serif;
+        font-weight: 100;
+        font-style: italic;
+
+    }
+
     /* Lorsque le lien est survolé, affichez l'icône et ajoutez l'effet de rebond */
-    .cv-link:hover .icon {
+    .cv-link .icon {
         display: inline-block;
         opacity: 1;
-        /* Icône de pleine opacité */
+    }
+
+    .icon {
+        margin-right: 8px;
+    }
+
+    .icon:hover {
+        display: inline-block;
+        opacity: 1;
         animation: bounce 2.5s ease infinite;
-        /* Ajoutez l'animation "bounce" */
     }
 
     .cv-link:hover {
-        color: #49858D;
+        color: #ade7ff;
     }
 
     /* Définissez l'animation "bounce" */
@@ -89,15 +103,17 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #49858D;
+        background: rgb(0,123,184);
+        background: linear-gradient(180deg, rgba(0,123,184,1) 0%, rgba(119,177,191,1) 100%);
         height: 720px;
         width: 450px;
-        border-radius: 0 0 0 50px;
+        border-radius: 0 0 0 30px;
 
         img {
-            margin-top: 50px;
+            margin-top: 48px;
             width: 100%;
-            border-radius: 0 0 0 50px;
+            border-radius: 0 0 0 30px;
+            z-index: 1;
         }
     }
 }

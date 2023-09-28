@@ -1,0 +1,201 @@
+// Font Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Font Philosopher
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Philosopher&display=swap');
+
+.menu-projects {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu-projects-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+
+    .project__container {
+        display: flex;
+        width: 100%;
+        padding: 10px 50px 10px 0;
+
+        .project__left {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex: 1.5;
+
+            .projects-image {
+                max-width: 95%;
+                height: auto;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-radius: 0 30px 30px 0;
+                }
+            }
+
+            .head-separator {
+                margin-bottom: 0;
+            }
+        }
+
+        .project__right {
+            flex: 1;
+
+            h1 {
+                font-family: 'Philosopher', sans-serif;
+                letter-spacing: 0.2rem;
+                font-weight: 100;
+            }
+        }
+    }
+
+    ul {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: black;
+        }
+    }
+
+    ul:hover {
+        background: #ade7ff;
+    }
+
+    .projects-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .projects-row-right {
+            padding-right: 40px;
+        }
+
+        h4,
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// .menu-projects-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+// }
+
+// .menu-projects-content {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
+
+// .project__container {
+//     display: flex;
+//     justify-content: center;
+//     flex: 1;
+// }
+
+// .project__left,
+// .project__right {
+//     flex: 1;
+//     text-align: center;
+// }
+
+// .project__left {
+//     display: flex;
+//     justify-content: center;
+//     padding-top: 90px;
+
+//     .projects-image {
+//         width: 100%;
+//     }
+
+//     img {
+//         max-width: 100%;
+//         max-height: 100%;
+//     }
+// }
+
+
+// .project__right {
+//     padding: 0;
+//     display: flex;
+//     flex-direction: column;
+//     width: 50%;
+//     height: 100%;
+//     margin-right: 100px;
+
+//     .page-head {
+//         display: flex;
+//         align-content: center;
+//     }
+
+//     .projects-row {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 0 40px 0 40px;
+
+//         .projects-row-left {
+//             display: flex;
+//         }
+//     }
+
+//     .page-head,
+//     .page-title {
+//         width: 100%;
+//         text-align: left;
+//         margin: 0;
+//         text-overflow: ellipsis;
+//         overflow-x: hidden;
+//     }
+
+//     a {
+//         font-size: 1.25rem;
+//         text-decoration: none;
+//         color: white;
+//     }
+
+//     ul {
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         background: red;
+//     }
+
+//     ul:hover {
+//         background: blue;
+//     }
+
+//     li {
+//         flex-direction: row;
+//         font-size: 1.25rem;
+//     }
+
+//     h4 {
+//         font-size: 2rem;
+//     }
+
+//     p {
+//         font-size: 2rem;
+//     }
+// }

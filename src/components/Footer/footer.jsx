@@ -11,7 +11,6 @@ function Footer() {
 
             <div className="contact">
                 <span>Contact</span>
-                <span>06.36.49.51.04</span>
                 <span>hugomouchonpro@gmail.com</span>
             </div>
 
@@ -19,12 +18,12 @@ function Footer() {
                 <span>Découvrez-moi ailleurs:</span>
                 <div className="reseaux-sociaux">
                     <a target='_blanck' href="https://github.com/HugoMouchon?tab=repositories"><img src={github} alt="" /></a>
-                    <a target='_blanck' href="https://www.linkedin.com/in/hugo-mouchon/"><img src={linkedin} alt="" className="icone" /></a>
+                    <a target='_blanck' href="https://www.linkedin.com/in/hugo-mouchon/"><img src={linkedin} alt="" className="icone-linkedin" /></a>
                 </div>
             </div>
 
             <div className="copyright">
-                <img src={copyright} alt="" className="icone" /> <span>Tous droits réservés</span>
+                <img src={copyright} alt="" className="icone-copyright" /> <span>Crée et développé par Hugo 2023</span>
             </div>
 
         </footer>

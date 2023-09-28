@@ -4,7 +4,7 @@ import gsap from 'gsap';
 const fadeInHtml = (element) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
+        { y: -50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.6 }
     );
 };
@@ -13,7 +13,7 @@ const fadeInHtml = (element) => {
 const fadeInCss = (element) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
+        { y: -50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.7 }
     );
 };
@@ -22,7 +22,7 @@ const fadeInCss = (element) => {
 const fadeInSass = (element) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
+        { y: -50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.8 }
     );
 };
@@ -31,7 +31,7 @@ const fadeInSass = (element) => {
 const fadeInJs = (element) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
+        { y: -50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.9 }
     );
 };
@@ -40,7 +40,7 @@ const fadeInJs = (element) => {
 const fadeInReact = (element) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
+        { y: -50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1 }
     );
 };
@@ -49,7 +49,7 @@ const fadeInReact = (element) => {
 const fadeInWordpress = (element) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
+        { y: -50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1.1 }
     );
 };
@@ -58,7 +58,7 @@ const fadeInWordpress = (element) => {
 const fadeInGithub = (element) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
+        { y: -50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1.2 }
     );
 };

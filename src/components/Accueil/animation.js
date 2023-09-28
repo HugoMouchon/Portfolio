@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-// Animation de la card ItemCountry
+// Animation du titre
 const fadeInTitle = (element) => {
     gsap.fromTo(
         element,
@@ -9,7 +9,7 @@ const fadeInTitle = (element) => {
     );
 };
 
-// Animation du text continent
+// Animation du sous-titre
 const fadeInSubtitle = (element) => {
     gsap.fromTo(
         element,
@@ -18,7 +18,7 @@ const fadeInSubtitle = (element) => {
     );
 };
 
-// Animation du nom du pays
+// Animation du deuxième sous-titre
 const fadeInSubtitle2 = (element) => {
     gsap.fromTo(
         element,
@@ -27,7 +27,7 @@ const fadeInSubtitle2 = (element) => {
     );
 };
 
-// Animation du texte "langues parlées"
+// Animation du lien à propos
 const fadeInPropos = (element) => {
     gsap.fromTo(
         element,
@@ -36,7 +36,7 @@ const fadeInPropos = (element) => {
     );
 };
 
-// Animation de la liste de langues
+// Animation du lien voir les projets
 const fadeInProjet = (element) => {
     gsap.fromTo(
         element,
@@ -45,10 +45,11 @@ const fadeInProjet = (element) => {
     );
 };
 
+// Animation de zoom arrière de la vidéo de background
 const zoomInAndOut = (element) => {
     gsap.fromTo(
       element,
-      { scale: 1.5 }, // Zoom avant léger
+      { scale: 1.5 },
       { scale: 1, duration: 2, ease: 'power2.inOut'}
     );
   };
