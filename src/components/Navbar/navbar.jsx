@@ -1,70 +1,79 @@
-import React, { useEffect, useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
+import React, { useEffect, useRef, useState } from "react";
+import { BiDialpad } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 import Logo from "../Logo/Logo";
-
+import github from "../../icones/github.svg";
+import linkedin from "../../icones/linkedin.svg";
+import tree from "../../img/tree.svg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [size, setSize] = useState({
-    width: 0,
-    height: 0,
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    if (size.width > 768 && menuOpen) {
-      setMenuOpen(false);
-    }
-  }, [size.width, menuOpen]);
 
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
   };
+
+  const handleEscapeKey = (event) => {
+    if (event.key === "Escape") {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleEscapeKey);
+
+    return () => {
+      window.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, []);
 
   return (
     <header className="nav">
       <div className="nav__content">
         <Link to="/" className="nav__content__logo"><Logo /></Link>
         <nav
-          className={`${"nav__content__nav"} 
-          ${menuOpen && size.width < 768 ? `${"isMenu"}` : ""} 
-          }`}
+          className={`${"nav__content__nav"} ${menuOpen ? `${"isMenu"}` : ""}`}
         >
-          <ul>
-            <li>
-              <Link to="/titre-projet1">Projet N°1</Link>
-            </li>
-            <li>
-              <Link to="/titre-projet2">Projet N°2</Link>
-            </li>
-            <li>
-              <Link to="/titre-projet3">Projet N°3</Link>
-            </li>
-            <li>
-              <Link to="/titre-projet4">Projet N°4</Link>
-            </li>
-          </ul>
+          <div className="nav__link__tree">
+            <div>
+              <ul>
+                <li>
+                  <h1><Link to="/">Accueil</Link></h1>
+                </li>
+                <li>
+                  <h1><Link to="/Menu-Projects">Mes Projets</Link></h1>
+                </li>
+                <li>
+                  <h1><Link to="/A-Propos-De-Moi">En savoir plus sur moi</Link></h1>
+                </li>
+
+                <div className="burger-reseaux-sociaux">
+                  <a target='_blanck' href="https://github.com/HugoMouchon?tab=repositories"><img src={github} alt="" />Github</a>
+                  <a target='_blanck' href="https://www.linkedin.com/in/hugo-mouchon/"><img src={linkedin} alt="" />Linkedin</a>
+                </div>
+              </ul>
+            </div>
+            <div className="tatoo-tree">
+              <img src={tree} alt="" />
+            </div>
+          </div>
+
+
         </nav>
 
-        <div className="nav__content__toggle">
+        <div className={`${"nav__content__toggle"} ${menuOpen ? `${"isMenu"}` : ""}`}>
           {!menuOpen ? (
-            <BiMenuAltRight onClick={menuToggleHandler} />
+            <BiDialpad
+              onClick={menuToggleHandler}
+              className="burger-open"
+            />
           ) : (
-            <AiOutlineClose onClick={menuToggleHandler} />
+            <AiOutlineClose
+              onClick={menuToggleHandler}
+              className="burger-closed"
+            />
           )}
         </div>
       </div>

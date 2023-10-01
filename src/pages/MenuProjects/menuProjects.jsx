@@ -2,13 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import "./menuProjects.scss";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
-import transitionLeft from "../../Animation/transitionLeft";
+import transitionLeft from "../../animation/transitionLeft";
 import pokemon from "../../img/pokemon.jpg";
 import cinema from "../../img/cinema.jpg";
 import countries from "../../img/countries.jpg";
 import ioprod from "../../img/ioprod.jpg";
 import wedding from "../../img/wedding.jpg";
 import { fadeInHeadTitle, fadeInHeadSeparator, fadeInProjectPokedex, fadeInProjectWatowatch, fadeInProjectBrand, fadeInProjectIoprod, fadeInProjectWedding, fadeInPokedexSeparator, fadeInWatowatchSeparator, fadeInBrandSeparator, fadeInIoprodSeparator, fadeInWeddingSeparator, animateImageFromLeftToRight } from './animation';
+import { Link } from "react-router-dom";
 
 function MenuProjects() {
   const [showPokemonImage, setShowPokemonImage] = useState(false);
@@ -79,41 +80,40 @@ function MenuProjects() {
     <div className="menu-projects">
       <Navbar />
       <div className="menu-projects-container">
-        <div className="project__container">
-          <div className="project__left">
+        <div className="menu__project__container">
+          <div className="menu__project__left">
 
             <div
-
-              className="projects-image">
+              className="menu-project-image">
               {showPokemonImage ? (<img ref={projectLeftImageRef} src={pokemon} alt="" />) : ""}
             </div>
 
             <div
               ref={projectLeftImageRef}
-              className="projects-image">
+              className="menu-project-image">
               {showCinemaImage ? (<img ref={projectLeftImageRef} src={cinema} alt="" />) : ""}
             </div>
 
             <div
               ref={projectLeftImageRef}
-              className="projects-image">
+              className="menu-project-image">
               {showBrandImage ? (<img ref={projectLeftImageRef} src={countries} alt="" />) : ""}
             </div>
 
             <div
               ref={projectLeftImageRef}
-              className="projects-image">
+              className="menu-project-image">
               {showIoprodImage ? (<img ref={projectLeftImageRef} src={ioprod} alt="" />) : ""}
             </div>
 
             <div
               ref={projectLeftImageRef}
-              className="projects-image">
+              className="menu-project-image">
               {showWeddingImage ? (<img ref={projectLeftImageRef} src={wedding} alt="" />) : ""}
             </div>
           </div>
 
-          <div className="project__right">
+          <div className="menu__project__right">
             <div>
               <div className="page-head">
                 <div ref={headTitleRef} className="page-title">
@@ -123,10 +123,10 @@ function MenuProjects() {
               </div>
             </div>
             <ul ref={projectPokedexRef}>
-              <a
-                href="pokedex"
+              <Link
+                to="/Project/Pokedex"
                 onMouseEnter={() => handleMouseEnter(setShowPokemonImage)}
-                onMouseLeave={() => handleMouseLeave(setShowPokemonImage)} s
+                onMouseLeave={() => handleMouseLeave(setShowPokemonImage)}
               >
                 <div className="projects-row">
                   <div className="projects-row-left">
@@ -136,13 +136,13 @@ function MenuProjects() {
                     <p className="project-category"> Développement Web</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </ul>
             <hr ref={headSeparatorPokedexRef} className="head-separator" />
 
             <ul ref={projectWatowatchRef}>
-              <a
-                href="cinema"
+              <Link
+                to="/Project/Watowatch"
                 onMouseEnter={() => handleMouseEnter(setShowCinemaImage)}
                 onMouseLeave={() => handleMouseLeave(setShowCinemaImage)} s
               >
@@ -154,13 +154,13 @@ function MenuProjects() {
                     <p className="project-category"> Développement Web</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </ul>
             <hr ref={headSeparatorWatowatchRef} className="head-separator" />
 
             <ul ref={projectBrandRef}>
-              <a
-                href="brand"
+              <Link
+                to="/Project/Brand"
                 onMouseEnter={() => handleMouseEnter(setShowBrandImage)}
                 onMouseLeave={() => handleMouseLeave(setShowBrandImage)} s
               >
@@ -172,13 +172,13 @@ function MenuProjects() {
                     <p className="project-category"> Développement Web</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </ul>
             <hr ref={headSeparatorBrandRef} className="head-separator" />
 
             <ul ref={projectIoprodRef}>
-              <a
-                href="pokedex"
+              <Link
+                to="/Project/Ioprod"
                 onMouseEnter={() => handleMouseEnter(setShowIoprodImage)}
                 onMouseLeave={() => handleMouseLeave(setShowIoprodImage)} s
               >
@@ -190,13 +190,13 @@ function MenuProjects() {
                     <p className="project-category"> Designer Web</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </ul>
             <hr ref={headSeparatorIoprodRef} className="head-separator" />
 
             <ul ref={projectWeddingRef}>
-              <a
-                href="pokedex"
+              <Link
+                to="/Project/Wedding"
                 onMouseEnter={() => handleMouseEnter(setShowWeddingImage)}
                 onMouseLeave={() => handleMouseLeave(setShowWeddingImage)} s
               >
@@ -208,7 +208,7 @@ function MenuProjects() {
                     <p className="project-category"> Illustration</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             </ul>
             <hr ref={headSeparatorWeddingRef} className="head-separator" />
           </div>

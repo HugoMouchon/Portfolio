@@ -1,13 +1,12 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuProjects from "./pages/MenuProjects/menuProjects";
-import ProjectN2 from "./pages/ProjetN°2";
-import ProjectN3 from "./pages/ProjetN°3";
-import ProjectN4 from "./pages/ProjetN°4";
+import Project from "./pages/Project/project";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Apropos from "./pages/Apropos/apropos";
 import { AnimatePresence } from "framer-motion";
+
 
 function App() {
   return (
@@ -15,12 +14,10 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="Menu-Projects" element={<MenuProjects />} />
-          <Route path="titre-projet2" element={<ProjectN2 />} />
-          <Route path="titre-projet3" element={<ProjectN3 />} />
-          <Route path="titre-projet4" element={<ProjectN4 />} />
-          <Route path="A-Propos-De-Moi" element={<Apropos />} />
-          <Route path="" element={<NotFound />} />
+          <Route path="/Menu-Projects" element={<MenuProjects />} />
+          <Route path="/Project/:name" element={<Project />} />
+          <Route path="/A-Propos-De-Moi" element={<Apropos />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
     </BrowserRouter>

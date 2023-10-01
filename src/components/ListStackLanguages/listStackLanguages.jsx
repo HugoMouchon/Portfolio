@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react'
 import "./listStackLanguages.scss"
-import css from "../../img/icones/css.svg";
-import github from "../../img/icones/github.svg";
-import html from "../../img/icones/html.svg";
-import js from "../../img/icones/js.svg";
-import react from "../../img/icones/react.svg";
-import sass from "../../img/icones/sass.svg";
-import wordpress from "../../img/icones/wordpress.svg";
+import css from "../../icones/css.svg";
+import github from "../../icones/github.svg";
+import html from "../../icones/html.svg";
+import js from "../../icones/js.svg";
+import react from "../../icones/react.svg";
+import sass from "../../icones/sass.svg";
+import wordpress from "../../icones/wordpress.svg";
 import { fadeInCss, fadeInGithub, fadeInHtml, fadeInJs, fadeInReact, fadeInSass, fadeInWordpress } from './animation';
 
 export default function ListStackLanguages() {

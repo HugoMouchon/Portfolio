@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import './accueil.scss';
 import video from '../../video/foret.mp4';
-import Navbar from '../Navbar/navbar';
+import Navbar from '../../components/Navbar/navbar';
 import { Link } from 'react-router-dom';
 import { fadeInProjet, fadeInPropos, fadeInSubtitle, fadeInSubtitle2, fadeInTitle, zoomInAndOut } from './animation';
-import ListStackLanguages from '../List-Stack-Languages/listStackLanguages';
+import ListStackLanguages from '../../components/ListStackLanguages/listStackLanguages';
 
 export function Accueil() {
 

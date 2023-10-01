@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { fadeInCv, fadeInPresentation, fadeInProfil, fadeInTitle } from "./animation";
 import cv from '../../img/cv_mouchon_hugo.pdf'
-import transitionRight from "../../Animation/transitionRight";
+import transitionRight from "../../animation/transitionRight";
 
 function Apropos() {
 
@@ -31,13 +31,12 @@ function Apropos() {
 
     return (
         <section className="container">
-
             <div className="presentation">
 
                 <h3 ref={titreRef}>À Propos de moi</h3>
 
                 <p ref={presentationRef}>Je me présente, je m'appelle MOUCHON Hugo......HOP HOP HOP 🤚🛑 <br />
-                    Pour vous lecteur attentionné, ce que vous vous apprêtez à lire ici n'est pas la biographie du meilleur codeur sachant coder spécialement avec le petit orteil de pied, je ne maitrise pas non plus 38 languages de programmation parcontre je suis bel est bien un candidat serviable, calme et attentionné.<br /><br />
+                    Pour vous lecteur attentionné, ce que vous vous apprêtez à lire ici n'est pas la biographie du meilleur codeur sachant coder avec spécialement le petit orteil de pied, je ne maitrise pas non plus 38 languages de programmation parcontre je suis bel est bien un candidat serviable, calme et attentionné.<br /><br />
                     Une personne qui croit en ce que l'être humain est capable de mieux et qui respecte l'autre.<br />
                     Alors bien sûr, comme tous les développeurs / geeks, je suis un peu perché ! Mais je l'assume et j'en tire ma force. <br /><br /> #MayTheForceBeWithYou  </p>
 

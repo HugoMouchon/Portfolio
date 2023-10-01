@@ -1,0 +1,62 @@
+@use '../../sass/mixins.scss' as m;
+
+.project-page {
+    height: 100vh;
+
+    .project__container {
+        position: relative;
+        height: auto;
+
+        .project__header {
+            display: flex;
+            justify-content: center;
+            padding: 0 50px;
+
+            @include m.breakpoint(tablet) {
+                padding: 0;
+            }
+
+            @include m.breakpoint(phone) {
+                padding: 0;
+            }
+
+            .image-header-container {
+                max-width: 100%;
+                max-width: 60%;
+                padding-bottom: -150px;
+                z-index: 1;
+
+                @include m.breakpoint(tablet) {
+                    position: relative;
+                    max-width: 100%;
+                }
+
+                @include m.breakpoint(phone) {
+                    position: relative;
+                    max-width: 100%;
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto; // Laissez la hauteur s'ajuster automatiquement
+                    object-fit: cover;
+                    border-radius: 0 0 50px 50px;
+
+                    @include m.breakpoint(tablet) {
+                        border-radius: 0;
+                    }
+
+                    @include m.breakpoint(phone) {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+
+        .project__description__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

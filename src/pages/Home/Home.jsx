@@ -1,5 +1,6 @@
 import React from "react";
-import Accueil from "../../components/Accueil/accueil";
+import Accueil from "../Accueil/accueil";
+
 
 function Home() {
   return (
