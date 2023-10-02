@@ -4,13 +4,10 @@
     height: 100vh;
 
     .project__container {
-        position: relative;
-        height: auto;
-
         .project__header {
             display: flex;
             justify-content: center;
-            padding: 0 50px;
+            align-items: center;
 
             @include m.breakpoint(tablet) {
                 padding: 0;
@@ -22,18 +19,14 @@
 
             .image-header-container {
                 max-width: 100%;
-                max-width: 60%;
-                padding-bottom: -150px;
-                z-index: 1;
+                margin: 0 250px 0 250px;
 
                 @include m.breakpoint(tablet) {
-                    position: relative;
-                    max-width: 100%;
+                    margin: 0;
                 }
 
                 @include m.breakpoint(phone) {
-                    position: relative;
-                    max-width: 100%;
+                    margin: 0;
                 }
 
                 img {
@@ -44,10 +37,12 @@
 
                     @include m.breakpoint(tablet) {
                         border-radius: 0;
+                        border-radius: 0 0 50px 50px;
                     }
 
                     @include m.breakpoint(phone) {
                         border-radius: 0;
+                        border-radius: 0 0 50px 50px;
                     }
                 }
             }
@@ -55,8 +50,17 @@
 
         .project__description__container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin: 0 250px 0 250px;
+
+            @include m.breakpoint(tablet) {
+                margin: 0;
+                margin: 0 100px 0 100px;
+            }
+
+            @include m.breakpoint(phone) {
+                margin: 0;
+                margin: 0 100px 0 100px;
+            }
         }
     }
 }

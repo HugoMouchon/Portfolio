@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import './apropos.scss';
 import profil from '../../img/moi.png'
+import Navbar from '../../components/Navbar/navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { fadeInCv, fadeInPresentation, fadeInProfil, fadeInTitle } from "./animation";
@@ -31,6 +32,7 @@ function Apropos() {
 
     return (
         <section className="container">
+            <Navbar/>
             <div className="presentation">
 
                 <h3 ref={titreRef}>À Propos de moi</h3>

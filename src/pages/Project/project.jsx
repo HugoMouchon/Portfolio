@@ -2,19 +2,25 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import "./project.scss";
 import Navbar from "../../components/Navbar/navbar";
-import Footer from "../../components/Footer/footer";
 import pokemon from "../../img/pokemon.jpg";
 import cinema from "../../img/cinema.jpg";
 import brand from "../../img/countries.jpg";
 import ioprod from "../../img/ioprod.jpg";
 import wedding from "../../img/wedding.jpg";
 import ProjectDescription from "../../components/ProjectDescription/projectDescription";
+import projectData from "./projectData.json";
 
 
 function Project() {
-  const { name } = useParams(); // Obtenez le paramètre de l'URL
+  const { name } = useParams();
 
-  // Définissez une variable pour l'image en fonction du paramètre
+  if (!(name in projectData)) {
+    return <div>Projet non trouvé</div>;
+  }
+
+  const project = projectData[name];
+
+
   let currentImage;
 
   if (name === "Pokedex") {
@@ -28,6 +34,7 @@ function Project() {
   } else if (name === "Wedding") {
     currentImage = wedding;
   }
+  
 
   return (
     <div className="project-page">
@@ -40,8 +47,8 @@ function Project() {
         </div>
 
         <div className="project__description__container">
-            <ProjectDescription />
-          </div>
+          <ProjectDescription project={project} />
+        </div>
       </div>
     </div>
   );

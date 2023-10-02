@@ -18,14 +18,14 @@
     color: c.$texte-default-color;
     font-family: 'Poppins', sans-serif;
 
-    .contact {
+    &-contact {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2.4rem;
     }
 
-    .reseaux-sociaux {
+    &-reseaux-sociaux {
         display: flex;
         justify-content: center;
         gap: 2.4rem;
@@ -37,7 +37,7 @@
         height: 3.2rem;
     }
 
-    .copyright {
+    &-copyright {
         display: flex;
         align-items: center;
         gap: 1rem;

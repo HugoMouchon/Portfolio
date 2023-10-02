@@ -1,0 +1,46 @@
+{
+    "Pokedex": {
+      "title": "Pokedex",
+      "categories": ["Design UI", "Développement Web"],
+      "year": 2023,
+      "description": "Développement d'une app Pokedex regroupant une liste de pokemons avec leurs informations (stats, caractéristiques, image, description...) le tout fonctionnant sous la technologie react.",
+      "websiteLink": "https://pokedex-react-app-six.vercel.app/",
+      "image": "https://unsplash.com/fr/photos/igw-14UnNjg"
+    },
+
+    "Watowatch": {
+      "title": "Watowatch",
+      "categories": ["Développement Web"],
+      "year": 2021,
+      "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
+      "websiteLink": "https://watowatch-site-example.com/",
+      "image": "cinema.jpg"
+    },
+
+    "Brand": {
+        "title": "Brand",
+        "categories": ["Développement Web"],
+        "year": 2021,
+        "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
+        "websiteLink": "https://watowatch-site-example.com/",
+        "image": "cinema.jpg"
+      },
+
+      "Ioprod": {
+        "title": "Ioprod",
+        "categories": ["Designer UI", "Intégration"],
+        "year": 2021,
+        "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
+        "websiteLink": "https://watowatch-site-example.com/",
+        "image": "cinema.jpg"
+      },
+
+      "Wedding": {
+        "title": "Wedding",
+        "categories": ["Illustration"],
+        "year": 2021,
+        "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
+        "websiteLink": "https://watowatch-site-example.com/",
+        "image": "cinema.jpg"
+      }
+  }

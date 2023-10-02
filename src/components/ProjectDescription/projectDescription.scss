@@ -1,0 +1,119 @@
+@use '../../sass/mixins.scss' as m;
+
+// Font Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// Font Philosopher
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Philosopher&display=swap');
+
+
+.description__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .description__head {
+        width: 100%;
+
+        h2 {
+            width: 100%;
+            padding: 20px 0 20px 0;
+            border: none;
+            border-bottom: 1px solid #fff;
+            font-family: 'Philosopher', sans-serif;
+            font-size: 4rem;
+        }
+    }
+
+    .description__container {
+        display: flex;
+
+        @include m.breakpoint(tablet) {
+            flex-direction: column;
+        }
+
+        @include m.breakpoint(phone) {
+            flex-direction: column;
+        }
+
+        .project-data {
+            table {
+                display: flex;
+
+                td {
+                    display: table-cell;
+                    vertical-align: top;
+                    padding: 0 70px 30px 0;
+
+
+                    h6 {
+                        text-transform: uppercase;
+                        font-size: 2rem;
+                    }
+
+                    h6,
+                    p {
+                        margin: 0;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 100;
+                    }
+
+                    @include m.breakpoint(tablet) {
+                        padding: 0 200px 30px 0;
+                    }
+
+                    @include m.breakpoint(phone) {
+                        padding: 0 80px 30px 0;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+
+                }
+            }
+        }
+        
+        .project-description {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            p {
+                margin: 0;
+                font-size: 1.8rem;
+            }
+        }
+
+        .website {
+            a {
+                text-decoration: none;
+                color: #fff;
+                position: relative;
+            }
+
+            a:hover {
+                color: #0dac8b;
+            }
+
+            a::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: #0dac8b;
+                bottom: -7px;
+                left: 0;
+                transition: width 0.3s ease;
+            }
+
+            a:hover::before {
+                width: 100%;
+            }
+        }
+    }
+}

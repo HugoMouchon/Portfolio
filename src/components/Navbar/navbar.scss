@@ -17,6 +17,7 @@
     height: 14vh;
     padding: 0 5rem;
     z-index: 1000;
+    position: fixed;
 
     @include m.breakpoint(1900px) {
         padding: 0 3rem;
@@ -62,7 +63,7 @@
             background: #001C2E;
             backdrop-filter: blur(6px);
             transform: translateY(-100%);
-            transition: 0.3s ease transform;
+            transition: 0.2s ease transform;
             opacity: 0.9;
 
 
@@ -114,12 +115,12 @@
                     }
 
                     a {
-                        font-size: 6rem;
+                        font-size: 4rem;
                         text-decoration: none;
                         color: inherit;
 
                         &:hover {
-                            color: #bdebff;
+                            color: #0dac8b;
                         }
                     }
                 }
@@ -137,7 +138,7 @@
                         align-items: center; // Centre les éléments verticalement
 
                         &:hover {
-                            color: #ade7ff;
+                            color: #0dac8b;
                         }
 
                         img {
@@ -180,7 +181,7 @@
             position: relative;
 
             &:hover {
-                color: rgb(162, 162, 246);
+                color: #0dac8b;
             }
 
             @include m.breakpoint(1900px) {

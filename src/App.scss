@@ -16,3 +16,26 @@ body {
     background-color: c.$bg-default-color;
     color: c.$texte-default-color;
 }
+
+/* Personnalisation de la barre de défilement verticale */
+::-webkit-scrollbar {
+    width: 10px; /* Largeur de la barre de défilement */
+    opacity: 0;
+    background: transparent;
+    transform-origin: center right;
+    transition: transform .3s, opacity .3s;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Couleur de l'arrière-plan de la piste */
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0d888e; /* Couleur de la poignée de la barre de défilement */
+    border-radius: 4px; /* Arrondi de la poignée */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0dac8b; /* Couleur de la poignée au survol */
+}
