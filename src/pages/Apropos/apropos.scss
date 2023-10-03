@@ -18,8 +18,8 @@
         font-size: 4rem;
         font-family: 'Philosopher', sans-serif;
         margin: 0;
-        color: #fff;
-        border-bottom: 1px solid #0d888e;
+        color: c.$title-h-color;
+        border-bottom: 1px solid c.$head-separator-propos;
         padding-bottom: 12px;
         font-weight: 100;
     }
@@ -34,7 +34,7 @@
     a {
         font-size: 2rem;
         text-decoration: none;
-        color: white;
+        color: c.$color-lien-propos;
         margin-top: 15px;
     }
 
@@ -47,7 +47,6 @@
     .cv-link {
         font-family: 'Philosopher', sans-serif;
         font-weight: 100;
-        font-style: italic;
 
     }
 
@@ -68,7 +67,7 @@
     }
 
     .cv-link:hover {
-        color: #0dac8b;
+        color: c.$hover-color-lien-propos;
     }
 
     /* Définissez l'animation "bounce" */
@@ -103,9 +102,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #0d888e;
-        // background: rgb(0,123,184);
-        // background: linear-gradient(180deg, rgba(0,123,184,1) 0%, rgba(119,177,191,1) 100%);
+        background-color: c.$bg-profil;
         height: 720px;
         width: 450px;
         border-radius: 0 0 0 30px;

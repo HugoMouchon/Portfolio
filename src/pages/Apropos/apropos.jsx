@@ -50,7 +50,7 @@ function Apropos() {
             <div ref={profilRef} className="profil">
                 <img src={profil} alt="profil de Hugo MOUCHON,jeune développeur web spécialisé dans le front-end" />
             </div>
-        </section>
+        </section>  
     );
 }
 

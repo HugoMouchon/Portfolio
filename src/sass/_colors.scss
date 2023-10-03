@@ -1,3 +1,5 @@
+// Apllication Génerale --------------------------------------------------------------------------------------------------------------------------------------
+
 // Couleur du texte par defaut
 $texte-default-color: #e8f1f9;
 
@@ -8,6 +10,25 @@ $bg-default-color: #001C2E;
 $bg-nav-color: #0A061F;
 
 // Couleur des gros titres
-$title-h-color: #A3BABE;
+$title-h-color: #e8f1f9;
 
+// Page // Accueil ----------------------------------------------------------------------------------------------------------------------------------------------
+
+// Couleur du filtre noir sur la vidéo en background
+$bg-filter-movie: rgba(0, 0, 0, 0.051);
+
+
+// Page // A propos de moi --------------------------------------------------------------------------------------------------------------------------------------
+
+// Couleur du séparateur dans la page "a propos de moi"
+$head-separator-propos: #0d888e;
+
+// Couleur du lien dans la page "a propos de moi"
+$color-lien-propos: #fff;
+
+// Couleur du hover du lien dans la page "a propos de moi"
+$hover-color-lien-propos: #0dac8b;
+
+// Background photo de profil"
+$bg-profil: #0d888e;
 

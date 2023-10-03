@@ -1,203 +1,214 @@
-@use '../../sass/mixins.scss' as m;
-@use '../../sass/colors.scss' as c;
+    @use '../../sass/mixins.scss' as m;
+    @use '../../sass/colors.scss' as c;
 
-// Font Poppins
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    // Font Poppins
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-// Font Philosopher
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Philosopher&display=swap');
+    // Font Philosopher
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Philosopher&display=swap');
 
-.nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: transparent;
-    height: 14vh;
-    padding: 0 5rem;
-    z-index: 1000;
-    position: fixed;
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: transparent;
+        height: 14vh;
+        padding: 0 5rem;
+        z-index: 1000;
+        position: fixed;
+        transition: 0.3s ease all;
 
-    @include m.breakpoint(1900px) {
-        padding: 0 3rem;
-    }
-
-    transition: 0.3s ease all;
-
-    .burger-open, .burger-closed {
-        font-size: 28px;
-    }
-
-    &__content {
-        overflow: hidden;
-        color: c.$texte-default-color;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        z-index: 100;
-
-        &__logo {
-            font-size: 2rem;
-            font-weight: bold;
-            text-decoration: none;
-            color: c.$texte-default-color;
+        .burger-open,
+        .burger-closed {
+            font-size: 28px;
         }
 
-        &__nav {
-            top: 0;
-            left: 0;
-            bottom: 0;
+        &__content {
+            overflow: hidden;
+            color: c.$texte-default-color;
+            margin: 0 auto;
             width: 100%;
-            height: 100vh;
-            position: fixed;
+            height: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: left;
-            background: #001C2E;
-            backdrop-filter: blur(6px);
-            transform: translateY(-100%);
-            transition: 0.2s ease transform;
-            opacity: 0.9;
+            justify-content: space-between;
+            position: relative;
+            z-index: 100;
 
-
-            @include m.breakpoint(1900px) {
-                transform: none;
-                flex-direction: row;
-                background: transparent;
-                width: auto;
-                height: 100%;
-                position: static;
+            &__logo {
+                font-size: 2rem;
+                font-weight: bold;
+                text-decoration: none;
+                color: c.$texte-default-color;
             }
 
-            ul {
-                list-style: none;
-                padding: 0;
+            &__nav {
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100vh;
+                position: fixed;
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 32px;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                background: #001C2E;
+                backdrop-filter: blur(6px);
+                transform: translateY(-100%);
+                transition: 0.2s ease transform;
+                opacity: 0.9;
 
-                @include m.breakpoint(1900px) {
-                    flex-direction: row;
-                    align-items: center;
-                    margin-bottom: 0;
-                    margin-right: calc(0.5rem + #{16px});
-                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 32px;
 
-                li {
-                    &:not(:last-child) {
-                        margin-bottom: 32px;
-
-                        @include m.breakpoint(1900px) {
-                            margin-bottom: 0;
-                            margin-right: 16px;
-                        }
+                    @include m.breakpoint(phone) {
+                        flex-direction: column;
                     }
 
-                    h1 {
-                        margin: 0;
-                        font-family: 'Philosopher', sans-serif;
-                        font-weight: 400;
-                        // letter-spacing: 0.5px;
 
-                        &::before {
-                            content: "0" counter(counter);
-                            counter-increment: counter;
+                    li {
+                        &:not(:last-child) {
+                            margin-bottom: 32px;
+                        }
+
+                        h1 {
+                            margin: 0;
+                            font-family: 'Philosopher', sans-serif;
+                            font-weight: 400;
+                        }
+
+                        .nav-title::before {
+                            content: attr(data-number);
                             padding-right: 30px;
                             font-family: 'Poppins', sans-serif;
                         }
-                    }
 
-                    a {
-                        font-size: 4rem;
-                        text-decoration: none;
-                        color: inherit;
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+                            position: relative; // Ajoutez cette ligne pour positionner les éléments ::before
+                            font-size: 3rem;
 
-                        &:hover {
-                            color: #0dac8b;
+
+                            &:hover {
+                                color: #0dac8b;
+
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 0;
+                                height: 2px;
+                                background-color: #0dac8b;
+                                bottom: -7px;
+                                left: 0;
+                                transition: width 0.3s ease;
+                            }
                         }
                     }
-                }
 
-                .burger-reseaux-sociaux {
-                    display: flex;
-                    align-items: center; // Centre les éléments verticalement
-                    gap: 20px;
-                    padding-top: 20px;
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        display: flex; // Permet à l'icône et au texte d'être alignés horizontalement
+                    .burger-reseaux-sociaux {
+                        display: flex;
                         align-items: center; // Centre les éléments verticalement
+                        gap: 20px;
+                        padding-top: 20px;
 
-                        &:hover {
-                            color: #0dac8b;
-                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            display: flex; // Permet à l'icône et au texte d'être alignés horizontalement
+                            align-items: center; // Centre les éléments verticalement
 
-                        img {
-                            width: 30px;
-                            height: 30px;
-                            margin-right: 8px; // Ajoute un espacement entre l'icône et le texte
+                            &:hover {
+                                color: #0dac8b;
+                            }
+
+                            img {
+                                width: 30px;
+                                margin-right: 8px; // Ajoute un espacement entre l'icône et le texte
+                            }
                         }
                     }
                 }
+
+                &.isMenu {
+                    transform: translateY(0);
+                }
             }
 
-            &.isMenu {
-                transform: translateY(0);
-            }
-        }
+            .burger-reseaux-sociaux {
+                display: flex;
+                align-items: center;
 
-        .burger-reseaux-sociaux {
-            display: flex;
-            align-items: center;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
 
-
-            a {
-                text-decoration: none;
-                color: white;
-
-            }
-
-            img {
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-        &__toggle {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            font-size: 2rem;
-            transition: 0.3s ease all;
-            position: relative;
-
-            &:hover {
-                color: #0dac8b;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
             }
 
-            @include m.breakpoint(1900px) {
-                display: none;
+            &__toggle {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-size: 2rem;
+                transition: 0.3s ease all;
+                position: relative;
+
+                &:hover {
+                    color: #0dac8b;
+                }
             }
-        }
 
-        .nav__link__tree {
-            display: flex;
-            align-items: center;
-            gap: 70px;
+            .nav__link__tree {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 150px;
 
-            .tatoo-tree {
-                max-width: 30%;
-                transform: translateX(0);
+                @include m.breakpoint(tablet) {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    width: 100%;
+                }
+
+                @include m.breakpoint(phone) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    gap: 20px;
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .tatoo-tree {
+                    max-width: 30%;
+                    transform: translateX(0);
+
+                    @include m.breakpoint(phone) {
+                        max-width: 60%;
+                    }
+                }
             }
         }
     }
-}

@@ -6,7 +6,7 @@
             "Développement Web"
         ],
         "year": 2023,
-        "description": "Développement d'une application Pokedex regroupant une liste de pokemons avec leurs informations (stats, caractéristiques, image, description...) le tout fonctionnant sous la technologie react.",
+        "description": "Développement d'une application Pokedex regroupant une liste de pokemons avec leurs informations (stats, caractéristiques, image, description...) grâce à l'API pokemon officiel, le tout fonctionnant sous la technologie react.",
         "websiteLink": "https://pokedex-react-app-six.vercel.app/",
         "images": [
             {
