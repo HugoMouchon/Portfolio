@@ -1,26 +1,32 @@
 {
     "Pokedex": {
         "title": "Pokedex",
-        "categories": ["Design UI", "Développement Web"],
+        "categories": [
+            "Design UI",
+            "Développement Web"
+        ],
         "year": 2023,
         "description": "Développement d'une application Pokedex regroupant une liste de pokemons avec leurs informations (stats, caractéristiques, image, description...) le tout fonctionnant sous la technologie react.",
         "websiteLink": "https://pokedex-react-app-six.vercel.app/",
-        "image": [
-          {
-            "title": "Pokedex",
-            "src": "../../img/pokemon.jpg"
-          },
-          {
-            "title": "Watowatch",
-            "src": "../../img/cinema.jpg"
-          },
-          {
-            "title": "Ioprod",
-            "src": "../../img/ioprod.jpg"
-          }
+        "images": [
+            {
+                "title": "Page d'accueil",
+                "src": "https://i.goopics.net/dfehai.png"
+            },
+            {
+                "title": "Details pokemon",
+                "src": "https://i.goopics.net/vuuv2y.png"
+            },
+            {
+                "title": "Fenêtre modal bas",
+                "src": "https://i.goopics.net/n8dyi1.png"
+            },
+            {
+                "title": "Fenêtre modal droite",
+                "src": "https://i.goopics.net/tocc9f.png"
+            }
         ]
-      },
-    
+    },
     "Watowatch": {
         "title": "Watowatch",
         "categories": [
@@ -29,10 +35,23 @@
         "year": 2023,
         "description": "Développement d'une application regroupant une liste de films grâce à l'API MoviedB (synopsis, notes, titre... ), chaque choix de film met à jour automatiquement le DOM et propose une liste de film similaire à celui choisi.",
         "websiteLink": "https://site-web-films-series-react.vercel.app/app/",
-        "image": [
-            "../../img/pokemon.jpg",
-            "../../img/cinema.jpg",
-            "../../img/ioprod.jpg"
+        "images": [
+            {
+                "title": "Page d'accueil",
+                "src": "https://i.goopics.net/tro13o.png"
+            },
+            {
+                "title": "Details d'un film",
+                "src": "https://i.goopics.net/0yyqnd.png"
+            },
+            {
+                "title": "Suggestions",
+                "src": "https://i.goopics.net/pk1el0.png"
+            },
+            {
+                "title": "Barre de recherche",
+                "src": "https://i.goopics.net/ndfjix.png"
+            }
         ]
     },
     "Brand": {
@@ -41,12 +60,21 @@
             "Développement Web"
         ],
         "year": 2023,
-        "description": "Développement d'une application réalisé lors d'un test technique, cette apli peut rechercher un pays selon sa langue parlé, chaque lettres que l'on tape met à jour automatiquement la liste proposé.",
+        "description": "Développement d'une application réalisée lors d'un test technique, cette application peut rechercher un pays selon sa langue parlée, chaque lettre que l'on tape met à jour automatiquement la liste proposée.",
         "websiteLink": "https://search-country-by-language-app.vercel.app/app/",
-        "image": [
-            "../../img/pokemon.jpg",
-            "../../img/cinema.jpg",
-            "../../img/ioprod.jpg"
+        "images": [
+            {
+                "title": "Page d'accueil",
+                "src": "https://i.goopics.net/axcvj0.png"
+            },
+            {
+                "title": "Description du pays (cards)",
+                "src": "https://i.goopics.net/2j165s.png"
+            },
+            {
+                "title": "Barre de recherche",
+                "src": "https://i.goopics.net/vkgsuy.png"
+            }
         ]
     },
     "Ioprod": {
@@ -56,11 +84,24 @@
             "Intégration"
         ],
         "year": 2022,
-        "description": "Projet de fin d'année réalisé lors de mon stage pour l'entreprise de réalité virtuel Ioprod, mise en place d'une identité visuel, création de divers supports de communication et d'un site internet réalisé avec le CMS Wordpress (Divi).",
-        "image": [
-            "../../img/pokemon.jpg",
-            "../../img/cinema.jpg",
-            "../../img/ioprod.jpg"
+        "description": "Projet de fin d'année réalisé lors de mon stage pour l'entreprise de réalité virtuel Ioprod, mise en place d'une identité visuelle, création de divers supports de communication et d'un site internet réalisé avec le CMS Wordpress (Divi). Je vous invite à regarder la totalité sur Behance.",
+        "websiteLink": "https://www.behance.net/portfolio/editor?project_id=169171083", 
+        "images": [
+            {
+                "title": "Logo",
+                "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6de1d1169171083.644822ad058c4.png"
+            },
+            {
+                "title": "Flyer",
+                "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/d75427169171083.6448df930a2d6.jpg"
+            },
+            {
+                "title": "Banière réseaux sociaux",
+                "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08490d169171083.6448df8aea198.png"
+            },
+            {
+                "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b34d32169171083.6448df8aead5b.png"
+            }
         ]
     },
     "Wedding": {
@@ -70,10 +111,48 @@
         ],
         "year": 2022,
         "description": "Projet réalisé pour un mariage stylisé dans les annnées 1920 (Art Deco), création des invitations, coupons-réponse, plan de tables, affiche...",
-        "image": [
-            "../../img/pokemon.jpg",
-            "../../img/cinema.jpg",
-            "../../img/ioprod.jpg"
+        "websiteLink": "https://www.behance.net/gallery/122766567/Weddings-Invitations", 
+        "images": [
+            {
+                "title": "Logo",
+                "src": "https://i.goopics.net/3u57dk.png"
+            },
+            {
+                "title": "Affiche de présentation",
+                "src": "https://i.goopics.net/bqvbfi.jpg"
+            },
+            {
+                "title": "Invitation",
+                "src": "https://i.goopics.net/7p3izv.jpg"
+            },
+            {
+                "title": "Carton d'invitation",
+                "src": "https://i.goopics.net/mmq4y0.png"
+            },
+            {
+                "title": "Coupon réponse",
+                "src": "https://i.goopics.net/at2ham.jpg"
+            },
+            {
+                "title": "Dinner",
+                "src": "https://i.goopics.net/4g0ucz.jpg"
+            },
+            {
+                "title": "Menu",
+                "src": "https://i.goopics.net/fbx8l5.jpg"
+            },
+            {
+                "title": "Plan de table",
+                "src": "https://i.goopics.net/im4td6.jpg"
+            },
+            {
+                "title": "Numéro de table",
+                "src": "https://i.goopics.net/mjtzu7.jpg"
+            },
+            {
+                "title": "Nom de table",
+                "src": "https://i.goopics.net/2wmlkh.jpg"
+            }
         ]
     }
 }

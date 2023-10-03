@@ -10,6 +10,7 @@ import wedding from "../../img/wedding.jpg";
 import ProjectDescription from "../../components/ProjectDescription/projectDescription";
 import projectData from "./projectData.json";
 import ProjectList from "../../components/ProjectList/projectList";
+import Footer from "../../components/Footer/footer";
 
 
 function Project() {
@@ -53,6 +54,10 @@ function Project() {
 
         <div className="project__image__container">
           <ProjectList />
+        </div>
+
+        <div className="footer-container">
+          <Footer />
         </div>
       </div>
     </div>

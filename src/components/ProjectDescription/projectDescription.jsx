@@ -1,5 +1,8 @@
 import React from 'react'
 import './projectDescription.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 export default function ProjectDescription(data) {
 
@@ -49,7 +52,17 @@ export default function ProjectDescription(data) {
           </div>
 
           <div className='website'>
-            <a href={websiteLink} target='blank'>Accéder au site</a>
+
+            <a href={websiteLink} target='blank'>Accéder au site
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                style={{
+                  paddingLeft: "10px",
+                }}
+                className="hoverable-icon"
+              />
+            </a>
+
           </div>
 
         </div>
