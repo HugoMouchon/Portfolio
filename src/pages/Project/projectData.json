@@ -1,46 +1,79 @@
 {
     "Pokedex": {
-      "title": "Pokedex",
-      "categories": ["Design UI", "Développement Web"],
-      "year": 2023,
-      "description": "Développement d'une app Pokedex regroupant une liste de pokemons avec leurs informations (stats, caractéristiques, image, description...) le tout fonctionnant sous la technologie react.",
-      "websiteLink": "https://pokedex-react-app-six.vercel.app/",
-      "image": "https://unsplash.com/fr/photos/igw-14UnNjg"
-    },
-
+        "title": "Pokedex",
+        "categories": ["Design UI", "Développement Web"],
+        "year": 2023,
+        "description": "Développement d'une application Pokedex regroupant une liste de pokemons avec leurs informations (stats, caractéristiques, image, description...) le tout fonctionnant sous la technologie react.",
+        "websiteLink": "https://pokedex-react-app-six.vercel.app/",
+        "image": [
+          {
+            "title": "Pokedex",
+            "src": "../../img/pokemon.jpg"
+          },
+          {
+            "title": "Watowatch",
+            "src": "../../img/cinema.jpg"
+          },
+          {
+            "title": "Ioprod",
+            "src": "../../img/ioprod.jpg"
+          }
+        ]
+      },
+    
     "Watowatch": {
-      "title": "Watowatch",
-      "categories": ["Développement Web"],
-      "year": 2021,
-      "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
-      "websiteLink": "https://watowatch-site-example.com/",
-      "image": "cinema.jpg"
+        "title": "Watowatch",
+        "categories": [
+            "Développement Web"
+        ],
+        "year": 2023,
+        "description": "Développement d'une application regroupant une liste de films grâce à l'API MoviedB (synopsis, notes, titre... ), chaque choix de film met à jour automatiquement le DOM et propose une liste de film similaire à celui choisi.",
+        "websiteLink": "https://site-web-films-series-react.vercel.app/app/",
+        "image": [
+            "../../img/pokemon.jpg",
+            "../../img/cinema.jpg",
+            "../../img/ioprod.jpg"
+        ]
     },
-
     "Brand": {
         "title": "Brand",
-        "categories": ["Développement Web"],
-        "year": 2021,
-        "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
-        "websiteLink": "https://watowatch-site-example.com/",
-        "image": "cinema.jpg"
-      },
-
-      "Ioprod": {
+        "categories": [
+            "Développement Web"
+        ],
+        "year": 2023,
+        "description": "Développement d'une application réalisé lors d'un test technique, cette apli peut rechercher un pays selon sa langue parlé, chaque lettres que l'on tape met à jour automatiquement la liste proposé.",
+        "websiteLink": "https://search-country-by-language-app.vercel.app/app/",
+        "image": [
+            "../../img/pokemon.jpg",
+            "../../img/cinema.jpg",
+            "../../img/ioprod.jpg"
+        ]
+    },
+    "Ioprod": {
         "title": "Ioprod",
-        "categories": ["Designer UI", "Intégration"],
-        "year": 2021,
-        "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
-        "websiteLink": "https://watowatch-site-example.com/",
-        "image": "cinema.jpg"
-      },
-
-      "Wedding": {
+        "categories": [
+            "Designer UI",
+            "Intégration"
+        ],
+        "year": 2022,
+        "description": "Projet de fin d'année réalisé lors de mon stage pour l'entreprise de réalité virtuel Ioprod, mise en place d'une identité visuel, création de divers supports de communication et d'un site internet réalisé avec le CMS Wordpress (Divi).",
+        "image": [
+            "../../img/pokemon.jpg",
+            "../../img/cinema.jpg",
+            "../../img/ioprod.jpg"
+        ]
+    },
+    "Wedding": {
         "title": "Wedding",
-        "categories": ["Illustration"],
-        "year": 2021,
-        "description": "Description du projet Watowatch Lorem ipsum dolor sit amet consectetur...",
-        "websiteLink": "https://watowatch-site-example.com/",
-        "image": "cinema.jpg"
-      }
-  }
+        "categories": [
+            "Illustration"
+        ],
+        "year": 2022,
+        "description": "Projet réalisé pour un mariage stylisé dans les annnées 1920 (Art Deco), création des invitations, coupons-réponse, plan de tables, affiche...",
+        "image": [
+            "../../img/pokemon.jpg",
+            "../../img/cinema.jpg",
+            "../../img/ioprod.jpg"
+        ]
+    }
+}

@@ -9,6 +9,7 @@ import ioprod from "../../img/ioprod.jpg";
 import wedding from "../../img/wedding.jpg";
 import ProjectDescription from "../../components/ProjectDescription/projectDescription";
 import projectData from "./projectData.json";
+import ProjectList from "../../components/ProjectList/projectList";
 
 
 function Project() {
@@ -34,7 +35,7 @@ function Project() {
   } else if (name === "Wedding") {
     currentImage = wedding;
   }
-  
+
 
   return (
     <div className="project-page">
@@ -48,6 +49,10 @@ function Project() {
 
         <div className="project__description__container">
           <ProjectDescription project={project} />
+        </div>
+
+        <div className="project__image__container">
+          <ProjectList />
         </div>
       </div>
     </div>
