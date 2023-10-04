@@ -1,3 +1,4 @@
+// Appel du fichier partiel "Mixins" pour le responsive
 @use '../../sass/mixins.scss' as m;
 
 // Font Philosopher
@@ -7,7 +8,7 @@
   margin: 0 250px 0 250px;
 
   @include m.breakpoint(tablet) {
-    margin: 0px 100px 0 100px;
+    margin: 0px 50px 0 50px;
   }
 
   h6 {

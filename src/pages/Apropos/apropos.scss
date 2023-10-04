@@ -1,3 +1,7 @@
+// Appel du fichier partiel "Mixins" pour le responsive
+@use '../../sass/mixins.scss' as m;
+
+// Appel du fichier partiel "Colors"
 @use '../../sass/colors' as c;
 
 // Font Poppins
@@ -14,6 +18,7 @@
     padding: 2.4rem;
     height: 100vh;
 
+
     h3 {
         font-size: 4rem;
         font-family: 'Philosopher', sans-serif;
@@ -29,6 +34,14 @@
         font-family: 'Poppins', sans-serif;
         padding-top: 10px;
         margin-right: 170px;
+
+        @include m.breakpoint(tablet) {
+            margin-right: 0;
+        }
+
+        @include m.breakpoint(phone) {
+            margin-right: 0;
+        }
     }
 
     a {
@@ -38,16 +51,17 @@
         margin-top: 15px;
     }
 
-    /* Ajoutez des styles pour l'icône pour la rendre initialement invisible */
-    .icon {
-        display: none;
-        animation: none;
-    }
-
     .cv-link {
         font-family: 'Philosopher', sans-serif;
         font-weight: 100;
 
+        @include m.breakpoint(phone) {
+            padding-bottom: 50px;
+        }
+
+        @include m.breakpoint(tablet) {
+            padding-bottom: 50px;
+        }
     }
 
     /* Lorsque le lien est survolé, affichez l'icône et ajoutez l'effet de rebond */
@@ -96,9 +110,23 @@
         display: flex;
         flex-direction: column;
         padding: 150px 500px 0 250px;
+
+        @include m.breakpoint(tablet) {
+            display: flex;
+            justify-content: center;
+            padding: 350px 50px 0 50px;
+        }
+
+        @include m.breakpoint(phone) {
+            display: flex;
+            justify-content: center;
+            padding: 750px 0 0 0;
+        }
     }
 
     .profil {
+        display: flex;
+        justify-content: center;
         position: absolute;
         top: 0;
         right: 0;
@@ -107,11 +135,34 @@
         width: 450px;
         border-radius: 0 0 0 30px;
 
+        @include m.breakpoint(tablet) {
+            left: 0;
+            width: 100%;
+            border-radius: 0 0 30px 30px;
+            height: auto;
+        }
+
+        @include m.breakpoint(phone) {
+            left: 0;
+            width: 100%;
+            border-radius: 0 0 30px 30px;
+            height: auto;
+        }
+
         img {
-            margin-top: 48px;
             width: 100%;
             border-radius: 0 0 0 30px;
             z-index: 1;
+
+            @include m.breakpoint(tablet) {
+                width: 25%;
+                border-radius: 0;
+            }
+
+            @include m.breakpoint(phone) {
+                width: 60%;
+                border-radius: 0;
+            }
         }
     }
 }

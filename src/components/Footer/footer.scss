@@ -1,5 +1,8 @@
-@use "../../sass/colors" as c;
+// Appel du fichier partiel "Mixins" pour le responsive
 @use '../../sass/mixins.scss' as m;
+
+// Appel du fichier partiel "Colors"
+@use '../../sass/colors' as c;
 
 // Font Poppins
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -19,14 +22,13 @@
 
     @include m.breakpoint(tablet) {
         text-align: center;
-        padding: 0 70px 30px 70px;
+        padding: 0 50px 30px 50px;
+        gap: 3rem;
     }
 
     @include m.breakpoint(phone) {
         flex-direction: column;
     }
-
-
 
     &-contact {
         display: flex;
@@ -54,10 +56,6 @@
     .icone-linkedin {
         color: c.$texte-default-color;
         width: 30px;
-        
-        &:hover {
-            color: red;
-        }
     }
 
     .icone-copyright {

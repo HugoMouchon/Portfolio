@@ -1,3 +1,4 @@
+// Appel du fichier partiel "Mixins" pour le responsive
 @use '../../sass/mixins.scss' as m;
 
 .project-page {
@@ -36,12 +37,10 @@
                     border-radius: 0 0 50px 50px;
 
                     @include m.breakpoint(tablet) {
-                        border-radius: 0;
                         border-radius: 0 0 50px 50px;
                     }
 
                     @include m.breakpoint(phone) {
-                        border-radius: 0;
                         border-radius: 0 0 50px 50px;
                     }
                 }
@@ -53,13 +52,11 @@
             margin: 0 250px 0 250px;
 
             @include m.breakpoint(tablet) {
-                margin: 0;
-                margin: 0 100px 0 100px;
+                margin: 0 50px 0 50px;
             }
 
             @include m.breakpoint(phone) {
-                margin: 0;
-                margin: 0 100px 0 100px;
+                margin: 0 25px 0 25px;
             }
         }
 

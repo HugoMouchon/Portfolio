@@ -1,3 +1,6 @@
+// Appel du fichier partiel "Mixins" pour le responsive
+@use '../../sass/mixins.scss' as m;
+
 // Appel du fichier partiel "Colors"
 @use '../../sass/colors' as c;
 
@@ -28,6 +31,10 @@
         height: 100vh;
         padding-bottom: 250px;
 
+        @include m.breakpoint(phone) {
+            padding-bottom: 150px;
+        }
+
         .video-filter {
             position: absolute;
             top: 0;
@@ -44,8 +51,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.95;
+            opacity: 0.99;
             z-index: -1;
+
+            @include m.breakpoint(phone) {
+                opacity: 0.75;
+            }
         }
 
         .titre {
@@ -87,7 +98,7 @@
             .title-projet,
             .title-propos {
                 text-decoration: none;
-                color: white;
+                color: c.$color-lien-accueil;
             }
 
         }
@@ -96,20 +107,21 @@
     .title-projet {
         position: relative;
         text-decoration: none;
-        /* Couleur du texte normale */
 
         &:before {
             content: '\2190 ';
-            /* Code Unicode de la flèche vers la gauche */
             position: absolute;
             left: -40px;
             top: -18px;
             font-size: 40px;
-            /* Ajustez la distance de la flèche par rapport au texte */
             opacity: 0;
             transform: translateX(10px);
             transition: opacity 0.3s ease, transform 0.3s ease;
             transform-origin: left;
+
+            @include m.breakpoint(phone) {
+                content: "";
+            }
         }
 
         &:hover {
@@ -124,49 +136,40 @@
             position: absolute;
             width: 100%;
             height: 2px;
-            /* Hauteur de la barre de soulignement */
-            background-color: white;
-            /* Couleur de la barre de soulignement */
+            background-color: c.$color-hover-underline-accueil;
             bottom: -7px;
-            /* Ajustez la position de la barre de soulignement */
             left: 0;
             transform: scaleX(0);
-            /* Initialement, la barre de soulignement est invisible */
             transform-origin: right;
             transition: transform 0.3s ease;
         }
 
         &:hover:after {
             transform: scaleX(1);
-            /* Affiche la barre de soulignement au survol */
             transform-origin: right;
         }
     }
 
     .title-propos {
         position: relative;
-        text-decoration: none;
-        color: black;
-        /* Couleur du texte normale */
 
         &:before {
             content: '\002192 ';
-            /* Code Unicode de la flèche vers la gauche */
             position: absolute;
             right: -40px;
             top: -18px;
             font-size: 40px;
-            /* Ajustez la distance de la flèche par rapport au texte */
             opacity: 0;
             transform: translateX(-10px);
             transition: opacity 0.3s ease, transform 0.3s ease;
             transform-origin: left;
+
+            @include m.breakpoint(phone) {
+                content: "";
+            }
         }
 
         &:hover {
-            color: blue;
-
-            /* Couleur du texte au survol */
             &:before {
                 opacity: 1;
                 transform: translateX(10px);
@@ -178,21 +181,16 @@
             position: absolute;
             width: 100%;
             height: 2px;
-            /* Hauteur de la barre de soulignement */
-            background-color: white;
-            /* Couleur de la barre de soulignement */
+            background-color: c.$color-hover-underline-accueil;
             bottom: -7px;
-            /* Ajustez la position de la barre de soulignement */
             right: 0;
             transform: scaleX(0);
-            /* Initialement, la barre de soulignement est invisible */
             transform-origin: left;
             transition: transform 0.3s ease;
         }
 
         &:hover:after {
             transform: scaleX(1);
-            /* Affiche la barre de soulignement au survol */
             transform-origin: left;
         }
     }

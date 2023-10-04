@@ -1,3 +1,5 @@
+
+
 // Apllication Génerale --------------------------------------------------------------------------------------------------------------------------------------
 
 // Couleur du texte par defaut
@@ -6,29 +8,87 @@ $texte-default-color: #e8f1f9;
 // Couleur du background par defaut
 $bg-default-color: #001C2E;
 
-// Couleur du background nav
-$bg-nav-color: #0A061F;
-
 // Couleur des gros titres
 $title-h-color: #e8f1f9;
 
-// Page // Accueil ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+// Composant--NavBar ----------------------------------------------------------------------------------------------------------------------------------------------
+
+// Couleur des liens
+$color-lien-navBar: #fff;
+
+// Couleur du background nav
+$bg-nav-color: #001C2E;
+
+// Couleur du hover du lien
+$hover-color-lien-navBar: #0dac8b;
+
+// Couleur du soulignement des liens
+$color-hover-underline-navBar: #0dac8b;
+
+// Couleur du hover des liens pour accéder aux réseaux sociaux
+$hover-color-lien-social: #0dac8b;
+
+// Couleur du hover des icones toggle (haut a droite de l'écran)
+$hover-color-toggle: #0dac8b;
+
+
+
+
+// Page--Accueil ----------------------------------------------------------------------------------------------------------------------------------------------
 
 // Couleur du filtre noir sur la vidéo en background
 $bg-filter-movie: rgba(0, 0, 0, 0.051);
 
+// Couleur des liens
+$color-lien-accueil: #fff;
 
-// Page // A propos de moi --------------------------------------------------------------------------------------------------------------------------------------
+// Couleur du soulignement des liens
+$color-hover-underline-accueil: #fff;
 
-// Couleur du séparateur dans la page "a propos de moi"
+
+
+
+// Page--A propos de moi --------------------------------------------------------------------------------------------------------------------------------------
+
+// Couleur du séparateur
 $head-separator-propos: #0d888e;
 
-// Couleur du lien dans la page "a propos de moi"
+// Couleur du lien
 $color-lien-propos: #fff;
 
-// Couleur du hover du lien dans la page "a propos de moi"
+// Couleur du hover du lien
 $hover-color-lien-propos: #0dac8b;
 
 // Background photo de profil"
 $bg-profil: #0d888e;
 
+
+
+
+// Page--Menu Projects --------------------------------------------------------------------------------------------------------------------------------------
+
+// Couleur du lien
+$color-lien-menuProjects: #fff;
+
+// Couleur du hover du lien
+$hover-color-lien-menuProjects: #0d888e;
+
+
+
+
+// Page--Project / Composant projectDescription --------------------------------------------------------------------------------------------------------------------------------------
+
+// Couleur du soulignement du titre h2
+$color-underline-title: #fff;
+
+// Couleur du lien
+$color-lien-project: #fff;
+
+// Couleur du hover du lien
+$hover-color-lien-project: #0dac8b;
+
+// Couleur du soulignement des liens
+$color-hover-underline: #0dac8b;

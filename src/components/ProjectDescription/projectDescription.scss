@@ -1,4 +1,8 @@
+// Appel du fichier partiel "Mixins" pour le responsive
 @use '../../sass/mixins.scss' as m;
+
+// Appel du fichier partiel "Colors"
+@use '../../sass/colors' as c;
 
 // Font Poppins
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
@@ -20,7 +24,7 @@
             width: 100%;
             padding: 20px 0 20px 0;
             border: none;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid c.$color-underline-title;
             font-family: 'Philosopher', sans-serif;
             font-size: 4rem;
         }
@@ -91,12 +95,12 @@
         .website {
             a {
                 text-decoration: none;
-                color: #fff;
+                color: c.$color-lien-project;
                 position: relative;
             }
 
             a:hover {
-                color: #0dac8b;
+                color: c.$hover-color-lien-project;
             }
 
             a::before {
@@ -104,7 +108,7 @@
                 position: absolute;
                 width: 0;
                 height: 2px;
-                background-color: #0dac8b;
+                background-color: c.$color-hover-underline;
                 bottom: -7px;
                 left: 0;
                 transition: width 0.3s ease;
@@ -112,11 +116,6 @@
 
             a:hover::before {
                 width: 100%;
-            }
-
-            .hoverable-icon:hover {
-                color: #0dac8b;
-                cursor: pointer;
             }
         }
     }

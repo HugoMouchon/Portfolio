@@ -1,4 +1,8 @@
+// Appel du fichier partiel "Mixins" pour le responsive
 @use '../../sass/mixins.scss' as m;
+
+// Appel du fichier partiel "Colors"
+@use '../../sass/colors' as c;
 
 // Font Poppins
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
@@ -17,16 +21,12 @@
     flex: 1;
     display: flex;
     justify-content: space-between;
-    
+
     .menu__project__container {
         display: flex;
         align-items: center;
         width: 100%;
-
-        @include m.breakpoint(tablet) {
-            display: flex;
-            flex-direction: column;
-        }
+        
 
         .menu__project__left {
             display: flex;
@@ -50,7 +50,6 @@
                 img {
                     max-width: 100%;
                     border-radius: 0 30px 30px 0;
-
                 }
             }
 
@@ -65,22 +64,22 @@
 
             @include m.breakpoint(tablet) {
                 width: 100%;
-                padding:0 50px 40px 50px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: stretch;
+                padding: 50px 50px 20px 50px;
             }
 
             @include m.breakpoint(phone) {
                 width: 100%;
-                padding:0 50px 40px 50px;
+                padding: 50px 20px 20px 20px;
             }
 
             h1 {
                 font-family: 'Philosopher', sans-serif;
                 letter-spacing: 0.1rem;
                 font-weight: 100;
+
+                @include m.breakpoint(phone) {
+                    padding-left: 0px;
+                }
             }
         }
     }
@@ -88,16 +87,12 @@
     ul {
         a {
             text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            color: #fff;
+            color: c.$color-lien-menuProjects;
         }
     }
 
     ul:hover {
-        background: #0d888e;
+        background: c.$hover-color-lien-menuProjects;
     }
 
     .projects-row {
