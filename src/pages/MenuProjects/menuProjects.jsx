@@ -1,7 +1,7 @@
   import React, { useEffect, useRef, useState } from "react";
   import "./menuProjects.scss";
   import Navbar from "../../components/Navbar/navbar";
-  import transitionLeft from "../../animation/transitionLeft";
+
   import pokemon from "../../img/pokemon.jpg";
   import cinema from "../../img/cinema.jpg";
   import countries from "../../img/countries.jpg";
@@ -9,6 +9,7 @@
   import wedding from "../../img/wedding.jpg";
   import { fadeInHeadTitle, fadeInHeadSeparator, fadeInProjectPokedex, fadeInProjectWatowatch, fadeInProjectBrand, fadeInProjectIoprod, fadeInProjectWedding, fadeInPokedexSeparator, fadeInWatowatchSeparator, fadeInBrandSeparator, fadeInIoprodSeparator, fadeInWeddingSeparator, animateImageFromLeftToRight } from './animation';
   import { Link } from "react-router-dom";
+import transitionLeft from "../../animation/transitionLeft";
 
   function MenuProjects() {
     const [showPokemonImage, setShowPokemonImage] = useState(false);

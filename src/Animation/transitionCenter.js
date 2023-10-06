@@ -15,4 +15,4 @@ const transitionCenter = (OgComponent) => {
     );
 };
 
-export default transitionCenter;
+export default (transitionCenter);

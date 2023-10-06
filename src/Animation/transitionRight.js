@@ -15,4 +15,4 @@ const transitionRight = (OgComponent) => {
     );
 };
 
-export default transitionRight;
+export default (transitionRight);
