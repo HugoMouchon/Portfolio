@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./project.scss";
 import Navbar from "../../components/Navbar/navbar";
 import pokemon from "../../img/pokemon.jpg";

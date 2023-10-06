@@ -2,7 +2,6 @@ import React from 'react'
 import './projectDescription.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 export default function ProjectDescription(data) {
 

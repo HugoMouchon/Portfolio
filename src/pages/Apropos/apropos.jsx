@@ -40,7 +40,7 @@ function Apropos() {
             fadeInCv(cvElement);
         }
 
-    }, []);
+    }, [isTablet, isPhone]);
 
     return (
         <section className="container">
