@@ -1,6 +1,9 @@
 // Appel du fichier partiel "Mixins" pour le responsive
 @use '../../sass/mixins.scss' as m;
 
+// Appel du fichier partiel "Colors"
+@use '../../sass/colors' as c;
+
 .project-page {
     height: 100vh;
 
@@ -60,8 +63,32 @@
             }
         }
 
-        .footer-container {
-            padding-top: 40px;
+        .project-next-previous {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px 50px 70px 50px;
+            border-top: 1px solid c.$color-underline-title;
+            margin: 70px 250px 0 250px;
+
+            @include m.breakpoint(tablet) {
+                margin: 50px 50px 50px 50px;
+            }
+
+            @include m.breakpoint(phone) {
+                margin: 50px 50px 50px 50px;
+                padding: 50px 0 0 0;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                @include m.breakpoint(tablet) {
+                    padding: 0;
+                }
+            }
         }
     }
 }

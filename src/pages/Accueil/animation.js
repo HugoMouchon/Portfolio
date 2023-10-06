@@ -1,57 +1,46 @@
 import gsap from 'gsap';
 
-// Animation du titre
-const fadeInTitle = (element) => {
+// Fonction générique pour les animations
+const animateElement = (element, props) => {
     gsap.fromTo(
         element,
-        { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.1 }
+        { ...props.from },
+        { ...props.to, duration: 1, ease: 'power2.out', delay: props.delay }
     );
+};
+
+// Animation du titre
+const fadeInTitle = (element) => {
+    animateElement(element, { from: { y: -100, opacity: 0 }, to: { y: 0, opacity: 1 }, delay: 0.1 });
 };
 
 // Animation du sous-titre
 const fadeInSubtitle = (element) => {
-    gsap.fromTo(
-        element,
-        { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.2 }
-    );
+    animateElement(element, { from: { y: -100, opacity: 0 }, to: { y: 0, opacity: 1 }, delay: 0.2 });
 };
 
 // Animation du deuxième sous-titre
 const fadeInSubtitle2 = (element) => {
-    gsap.fromTo(
-        element,
-        { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.3 }
-    );
+    animateElement(element, { from: { y: -100, opacity: 0 }, to: { y: 0, opacity: 1 }, delay: 0.3 });
 };
 
 // Animation du lien à propos
 const fadeInPropos = (element) => {
-    gsap.fromTo(
-        element,
-        { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.4 }
-    );
+    animateElement(element, { from: { y: -100, opacity: 0 }, to: { y: 0, opacity: 1 }, delay: 0.4 });
 };
 
 // Animation du lien voir les projets
 const fadeInProjet = (element) => {
-    gsap.fromTo(
-        element,
-        { x: -100, opacity: 0 },
-        { x: 0, opacity: 1, duration: 1, ease: 'power2.out', delay: 0.5 }
-    );
+    animateElement(element, { from: { x: -100, opacity: 0 }, to: { x: 0, opacity: 1 }, delay: 0.5 });
 };
 
 // Animation de zoom arrière de la vidéo de background
 const zoomInAndOut = (element) => {
     gsap.fromTo(
-      element,
-      { scale: 1.5 },
-      { scale: 1, duration: 2, ease: 'power2.inOut'}
+        element,
+        { scale: 1.5 },
+        { scale: 1, duration: 2, ease: 'power2.inOut' }
     );
-  };
+};
 
 export { fadeInTitle, fadeInSubtitle, fadeInSubtitle2, fadeInPropos, fadeInProjet, zoomInAndOut };

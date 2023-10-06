@@ -109,18 +109,28 @@
     .presentation {
         display: flex;
         flex-direction: column;
-        padding: 150px 500px 0 250px;
+        padding: 80px 500px 0 250px;
 
         @include m.breakpoint(tablet) {
             display: flex;
             justify-content: center;
-            padding: 350px 50px 0 50px;
+            padding: 700px 50px 0 50px;
         }
 
         @include m.breakpoint(phone) {
             display: flex;
             justify-content: center;
-            padding: 750px 0 0 0;
+            padding: 1050px 0 0 0;
+        }
+    }
+
+    .snatch {
+        color: #0d888e;
+        font-style: italic;
+        font-size: 1.8rem;
+
+        &:hover {
+            color: c.$hover-color-lien-propos;
         }
     }
 

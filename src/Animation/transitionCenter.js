@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
-import "./transitionLeft.scss";
+import "./transitionCenter.scss";
 
-const transitionLeft = (OgComponent) => {
+const transitionCenter = (OgComponent) => {
     return () => (
         <>
             <OgComponent />
             <motion.div
                 className="slide-in"
-                initial={{ x: "-100%", y: 0 }}
-                animate={{ x: "100%" }}
+                initial={{ y: "-100%", x: 0 }}
+                animate={{ y: "100%"}}
                 transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1.15] }}
             />
         </>
     );
 };
 
-export default (transitionLeft);
+export default (transitionCenter);

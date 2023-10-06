@@ -5,7 +5,7 @@ const fadeInHeadTitle = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.1 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.1 }
     );
 };
 
@@ -14,7 +14,7 @@ const fadeInHeadSeparator = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.1 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.1 }
     );
 };
 
@@ -23,7 +23,7 @@ const fadeInProjectPokedex = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.5 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.3 }
     );
 };
 
@@ -31,7 +31,7 @@ const fadeInPokedexSeparator = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.6 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.3 }
     );
 };
 
@@ -41,7 +41,7 @@ const fadeInProjectWatowatch = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.7 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.4 }
     );
 };
 
@@ -49,7 +49,7 @@ const fadeInWatowatchSeparator = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.8 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.4 }
     );
 };
 
@@ -58,7 +58,7 @@ const fadeInProjectBrand = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 0.9 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.5 }
     );
 };
 
@@ -66,7 +66,7 @@ const fadeInBrandSeparator = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.5 }
     );
 };
 
@@ -75,7 +75,7 @@ const fadeInProjectIoprod = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1.1 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.6 }
     );
 };
 
@@ -83,7 +83,7 @@ const fadeInIoprodSeparator = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1.2 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.6 }
     );
 };
 
@@ -92,7 +92,7 @@ const fadeInProjectWedding = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1.3 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.7 }
     );
 };
 
@@ -100,7 +100,7 @@ const fadeInWeddingSeparator = (element) => {
     gsap.fromTo(
         element,
         { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', delay: 1.4 }
+        { y: 0, opacity: 1, duration: 0.6, ease: 'power2.out', delay: 0.7 }
     );
 };
 

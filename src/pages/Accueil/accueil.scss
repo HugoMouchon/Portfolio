@@ -32,7 +32,7 @@
         padding-bottom: 250px;
 
         @include m.breakpoint(phone) {
-            padding-bottom: 150px;
+            padding-bottom: 200px;
         }
 
         .video-filter {
@@ -55,7 +55,7 @@
             z-index: -1;
 
             @include m.breakpoint(phone) {
-                opacity: 0.75;
+                opacity: 0.80;
             }
         }
 
@@ -64,6 +64,14 @@
             align-items: center;
             flex-direction: column;
 
+            @include m.breakpoint(phone) {
+                padding-top: 70px;
+            }
+
+            @include m.breakpoint(tablet) {
+                padding-top: 50px;
+            }
+
             h1 {
                 margin: 0;
                 font-size: 5rem;
@@ -71,6 +79,11 @@
                 font-family: 'Philosopher', sans-serif;
                 letter-spacing: 0.1rem;
                 font-weight: 100;
+                color: c.$title-color ;
+
+                @include m.breakpoint(phone) {
+                    font-size: 3.5rem;
+                }
             }
 
             .sous-titre {
@@ -78,12 +91,25 @@
                 text-align: center;
                 font-size: 3rem;
                 font-weight: 100;
+
+                @include m.breakpoint(phone) {
+                    font-size: 2.5rem;
+                }
+
+                @include m.breakpoint(tablet) {
+                    font-size: 4rem;
+                }
             }
 
             p {
                 margin: 2rem;
                 text-align: center;
                 font-weight: 0;
+                color: c.$title-color;
+
+                @include m.breakpoint(tablet) {
+                    font-size: 2.5rem;
+                }
             }
         }
 
@@ -95,10 +121,18 @@
             font-size: 18px;
             margin-top: 30px;
 
+            @include m.breakpoint(phone) {
+                margin-top: 30px;
+            }
+
             .title-projet,
             .title-propos {
                 text-decoration: none;
                 color: c.$color-lien-accueil;
+
+                @include m.breakpoint(tablet) {
+                    font-size: 2.6rem;
+                }
             }
 
         }
