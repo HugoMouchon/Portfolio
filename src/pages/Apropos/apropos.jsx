@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { fadeInCv, fadeInPresentation, fadeInProfil, fadeInTitle } from "./animationDesktop";
 import { fadeInCvResponsive, fadeInPresentationResponsive, fadeInProfilResponsive, fadeInTitleResponsive } from "./animationTablet&Phone";
-import cv from '../../img/cv_mouchon_hugo.pdf'
-import transitionRight from "../../Animation/transitionRight";
+import cv from '../../img/curriculumVitae.pdf';
+import transitionRight from "../../animation/transitionRight";
 
 function Apropos() {
     const cvRef = useRef(null);
