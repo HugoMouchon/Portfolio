@@ -8,7 +8,7 @@ import ioprod from "../../img/ioprod.jpg";
 import wedding from "../../img/wedding.jpg";
 import { fadeInHeadTitle, fadeInHeadSeparator, fadeInProjectPokedex, fadeInProjectWatowatch, fadeInProjectBrand, fadeInProjectIoprod, fadeInProjectWedding, fadeInPokedexSeparator, fadeInWatowatchSeparator, fadeInBrandSeparator, fadeInIoprodSeparator, fadeInWeddingSeparator, animateImageFromLeftToRight } from './animation';
 import { Link } from "react-router-dom";
-import transitionLeft from "../../animation/transitionLeft";
+import transitionLeft from "../../Animation/transitionLeft";
 
 
 function MenuProjects() {

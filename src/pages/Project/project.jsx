@@ -11,7 +11,7 @@ import ProjectDescription from "../../components/ProjectDescription/projectDescr
 import projectData from "./projectData.json";
 import ProjectList from "../../components/ProjectList/projectList";
 import Footer from "../../components/Footer/footer";
-import transitionCenter from "../../animation/transitionCenter";
+import transitionCenter from "../../Animation/transitionCenter";
 import { fadeInImageHeader, fadeInTitleDescription, fadeInDescription, fadeInTitleProject, fadeInImageProject } from "./animation";
 import Button from "../../components/Button/button";
 
