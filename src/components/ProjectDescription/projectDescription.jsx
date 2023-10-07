@@ -63,7 +63,6 @@ export default function ProjectDescription(data) {
             </a>
 
           </div>
-
         </div>
       </div>
     </div>

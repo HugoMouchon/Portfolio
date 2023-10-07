@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./menuProjects.scss";
 import Navbar from "../../components/Navbar/navbar";
-
 import pokemon from "../../img/pokemon.jpg";
 import cinema from "../../img/cinema.jpg";
 import countries from "../../img/countries.jpg";
