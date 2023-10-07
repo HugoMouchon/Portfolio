@@ -7,7 +7,7 @@ import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { fadeInCv, fadeInPresentation, fadeInProfil, fadeInTitle } from "./animationDesktop";
 import { fadeInCvResponsive, fadeInPresentationResponsive, fadeInProfilResponsive, fadeInTitleResponsive } from "./animationTablet&Phone";
 import cv from '../../img/curriculumVitae.pdf';
-import transitionRight from "../../animation/transitionRight";
+import transitionRight from "../../Animation/transitionRight";
 
 function Apropos() {
     const cvRef = useRef(null);
