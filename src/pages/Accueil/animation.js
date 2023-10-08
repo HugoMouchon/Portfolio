@@ -5,7 +5,7 @@ const animateElement = (element, props) => {
     gsap.fromTo(
         element,
         { ...props.from },
-        { ...props.to, duration: 1, ease: 'power2.out', delay: props.delay }
+        { ...props.to, duration: 0.4, ease: 'power2.out', delay: props.delay }
     );
 };
 
@@ -24,14 +24,14 @@ const fadeInSubtitle2 = (element) => {
     animateElement(element, { from: { y: -100, opacity: 0 }, to: { y: 0, opacity: 1 }, delay: 0.3 });
 };
 
-// Animation du lien à propos
-const fadeInPropos = (element) => {
-    animateElement(element, { from: { y: -100, opacity: 0 }, to: { y: 0, opacity: 1 }, delay: 0.4 });
-};
-
 // Animation du lien voir les projets
 const fadeInProjet = (element) => {
-    animateElement(element, { from: { x: -100, opacity: 0 }, to: { x: 0, opacity: 1 }, delay: 0.5 });
+    animateElement(element, { from: { x: -125, opacity: 0 }, to: { x: 0, opacity: 1 }, delay: 1.1 });
+};
+
+// Animation du lien à propos
+const fadeInPropos = (element) => {
+    animateElement(element, { from: { x: 100, opacity: 0 }, to: { x: 0, opacity: 1 }, delay: 1.2 });
 };
 
 // Animation de zoom arrière de la vidéo de background

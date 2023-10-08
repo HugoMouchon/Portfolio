@@ -32,7 +32,7 @@
         padding-bottom: 250px;
 
         @include m.breakpoint(phone) {
-            padding-bottom: 200px;
+            padding-bottom: 100px;
         }
 
         .video-filter {
@@ -65,7 +65,7 @@
             flex-direction: column;
 
             @include m.breakpoint(phone) {
-                padding-top: 70px;
+                padding-top: 80px;
             }
 
             @include m.breakpoint(tablet) {
@@ -122,8 +122,10 @@
             margin-top: 30px;
 
             @include m.breakpoint(phone) {
-                margin-top: 60px;
-                gap: 3rem;
+                gap: 2rem;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 90px;
             }
 
             .title-projet,
@@ -137,6 +139,16 @@
 
                 @include m.breakpoint(phone) {
                     color: c.$title-color;
+                }
+            }
+
+            .bg {
+
+                @include m.breakpoint(phone) {
+                    display: flex;
+                    justify-content: center;
+                    background-color: #0d888ede;
+                    width: 70%;
                 }
             }
         }

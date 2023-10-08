@@ -50,8 +50,8 @@ function Accueil() {
                 </div>
 
                 <div className="header__projects">
-                    <p><Link to="/Menu-Projects" className='title-projet' ref={projetElementRef}>Voir mes projets</Link></p>
-                    <p><Link to="/A-Propos-De-Moi" className='title-propos' ref={proposElementRef}>En savoir plus sur moi</Link></p>
+                    <div ref={projetElementRef} className="bg"><p><Link to="/Menu-Projects" className='title-projet' >Voir mes projets</Link></p></div>
+                    <div ref={proposElementRef} className="bg"><p><Link to="/A-Propos-De-Moi" className='title-propos' >En savoir plus sur moi</Link></p></div>
                 </div>
             </div>
         </header>
