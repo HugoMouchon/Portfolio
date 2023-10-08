@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export const Logo = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="240" height="60" viewBox="0 0 300 60">
+    <svg xmlns="http://www.w3.org/2000/svg" width="230" height="60" viewBox="0 0 300 60">
       <motion.g initial={{ opacity: 1 }}>
         <motion.text
           x="10"

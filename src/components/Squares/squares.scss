@@ -22,8 +22,8 @@
     }
 
     @include m.breakpoint(phone) {
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
         right: 40%;
         top: 65%; /* Position verticale au milieu */
     }
@@ -56,8 +56,8 @@
     }
 
     @include m.breakpoint(phone) {
-        width: 150px;
-        height: 150px;
+        width: 115px;
+        height: 115px;
         right: 25%;
         top: 35%; /* Position verticale au milieu */
     }
@@ -90,8 +90,8 @@
     }
 
     @include m.breakpoint(phone) {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         right: 15%;
         top: 25%; /* Position verticale au milieu */
     }

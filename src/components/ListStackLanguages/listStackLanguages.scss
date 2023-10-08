@@ -1,8 +1,14 @@
+// Appel du fichier partiel "Mixins" pour le responsive
+@use '../../sass/mixins.scss' as m;
+
 .list_languages {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 1rem;
 
+    @include m.breakpoint(phone) {
+        gap: 0.5rem;
+    }
         .language-icon {
             height: 40px;
             padding: 0;

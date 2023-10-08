@@ -39,6 +39,10 @@
         position: relative;
         z-index: 100;
 
+        @include m.breakpoint(phone) {
+            justify-content: center;
+        }
+
         &__nav {
             top: 0;
             left: 0;

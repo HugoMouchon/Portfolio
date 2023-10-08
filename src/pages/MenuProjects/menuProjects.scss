@@ -26,7 +26,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        
+
 
         .menu__project__left {
             display: flex;
@@ -85,6 +85,11 @@
     }
 
     ul {
+
+        @include m.breakpoint(phone) {
+            padding-inline-start: 0px;
+        }
+
         a {
             text-decoration: none;
             color: c.$color-lien-menuProjects;
@@ -102,6 +107,10 @@
 
         .projects-row-right {
             padding-right: 40px;
+
+            @include m.breakpoint(phone) {
+                padding-right: 0px;
+            }
         }
 
         h4,
