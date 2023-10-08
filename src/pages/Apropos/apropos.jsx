@@ -8,6 +8,7 @@ import { fadeInCv, fadeInPresentation, fadeInProfil, fadeInTitle } from "./anima
 import { fadeInCvResponsive, fadeInPresentationResponsive, fadeInProfilResponsive, fadeInTitleResponsive } from "./animationTablet&Phone";
 import cv from '../../img/curriculumVitae.pdf';
 import transitionRight from "../../Animation/transitionRight";
+import Squares from "../../components/Squares/squares";
 
 function Apropos() {
     const cvRef = useRef(null);
@@ -68,7 +69,10 @@ function Apropos() {
             </div>
 
             <div ref={profilRef} className="profil">
-                <img src={profil} alt="profil de Hugo MOUCHON,jeune développeur web spécialisé dans le front-end" />
+                {/* Carré rotatif derrière la photo de profil */}
+                <Squares />
+                {/* Photo de profil */}
+                <img src={profil} alt="profil de Hugo MOUCHON, jeune développeur web spécialisé dans le front-end" />
             </div>
         </section>
     );

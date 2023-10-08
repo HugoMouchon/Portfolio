@@ -84,28 +84,6 @@
         color: c.$hover-color-lien-propos;
     }
 
-    /* Définissez l'animation "bounce" */
-    @keyframes bounce {
-
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-            transform: translateY(0);
-        }
-
-        40% {
-            transform: translateY(-15px);
-            /* Ajustez la distance de rebond */
-        }
-
-        60% {
-            transform: translateY(-10px);
-            /* Ajustez la distance de rebond */
-        }
-    }
-
     .presentation {
         display: flex;
         flex-direction: column;
@@ -146,32 +124,44 @@
         border-radius: 0 0 0 30px;
 
         @include m.breakpoint(tablet) {
-            left: 0;
             width: 100%;
+            height: 300px;
             border-radius: 0 0 30px 30px;
-            height: auto;
         }
 
         @include m.breakpoint(phone) {
-            left: 0;
             width: 100%;
             border-radius: 0 0 30px 30px;
-            height: auto;
+            height: 400px;
         }
 
-        img {
-            width: 100%;
+          img {
+            position: absolute;
+            width: auto;
+            height: auto;
+            max-width: 90%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+            max-height: 100%; /* Pour s'assurer que l'image ne dépasse pas la hauteur du conteneur */
             border-radius: 0 0 0 30px;
+            bottom: 0;
+            left: 0;
             z-index: 1;
-
+        
             @include m.breakpoint(tablet) {
-                width: 25%;
+                max-width: 30%;
                 border-radius: 0;
+                top: 0;
+                left: 50%; /* Centrer horizontalement */
+                transform: translateX(-50%); /* Ajuster pour centrer horizontalement */
+                height: auto;
             }
-
+        
             @include m.breakpoint(phone) {
-                width: 60%;
+                max-width: 60%;
                 border-radius: 0;
+                top: 0;
+                left: 50%; /* Centrer horizontalement */
+                transform: translateX(-50%); /* Ajuster pour centrer horizontalement */
+                height: auto;
             }
         }
     }

@@ -1,0 +1,98 @@
+// Appel du fichier partiel "Mixins" pour le responsive
+@use '../../sass/mixins.scss' as m;
+
+// Appel du fichier partiel "Colors"
+@use '../../sass/colors' as c;
+
+.rotating-square {
+    width: 325px;
+    height: 325px;
+    background-color: #157562; /* Couleur de fond du carré */
+    position: absolute;
+    right: 15%;
+    top: 60%; /* Position verticale au milieu */
+    transform: translate(-50%, -50%); /* Centrer le carré */
+    animation: rotate 120s linear infinite; /* Animation de rotation */
+
+    @include m.breakpoint(tablet) {
+        width: 185px;
+        height: 185px;
+        right: 40%;
+        top: 60%; /* Position verticale au milieu */
+    }
+
+    @include m.breakpoint(phone) {
+        width: 200px;
+        height: 200px;
+        right: 40%;
+        top: 65%; /* Position verticale au milieu */
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  .rotating-square-two {
+    width: 200px;
+    height: 200px;
+    background-color: #16a387; /* Couleur de fond du carré */
+    position: absolute;
+    right: 15%;
+    top: 30%; /* Position verticale au milieu */
+    transform: translate(-50%, -50%); /* Centrer le carré */
+    animation: rotateClockwise  60s linear infinite; /* Animation de rotation */
+
+    @include m.breakpoint(tablet) {
+        width: 125px;
+        height: 125px;
+        right: 30%;
+        top: 35%; /* Position verticale au milieu */
+    }
+
+    @include m.breakpoint(phone) {
+        width: 150px;
+        height: 150px;
+        right: 25%;
+        top: 35%; /* Position verticale au milieu */
+    }
+  }
+
+  @keyframes rotateClockwise  {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(-360deg);
+    }
+  }
+
+  .rotating-square-three {
+    width: 100px;
+    height: 100px;
+    background-color: #36dbba; /* Couleur de fond du carré */
+    position: absolute;
+    right: 10%;
+    top: 19%; /* Position verticale au milieu */
+    transform: translate(-50%, -50%); /* Centrer le carré */
+    animation: rotate 50s linear infinite; /* Animation de rotation */
+
+    @include m.breakpoint(tablet) {
+        width: 90px;
+        height: 90px;
+        right: 20%;
+        top: 23%; /* Position verticale au milieu */
+    }
+
+    @include m.breakpoint(phone) {
+        width: 90px;
+        height: 90px;
+        right: 15%;
+        top: 25%; /* Position verticale au milieu */
+    }
+  }
