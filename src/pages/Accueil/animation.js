@@ -1,3 +1,4 @@
+// Utilisation de la dépendance 'Gsap' qui permet de créer des animations
 import gsap from 'gsap';
 
 // Fonction générique pour les animations

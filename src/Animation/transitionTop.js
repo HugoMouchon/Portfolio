@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import "./transitionCenter.scss";
+import "./transitionTop.scss";
 
-const transitionCenter = (OgComponent) => {
+// Animation de page du haut vers le bas via la dépendance "framer-motion"
+const transitionTop = (OgComponent) => {
     return () => (
         <>
             <OgComponent />
@@ -15,4 +16,4 @@ const transitionCenter = (OgComponent) => {
     );
 };
 
-export default (transitionCenter);
+export default (transitionTop);

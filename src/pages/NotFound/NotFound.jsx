@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
-import AnimatedCat404 from "./animationCat/animatedCat404";
+import AnimatedCat404 from "../../components/animatedCat404/animatedCat404";
 import "./notFound.scss";
+
 
 function NotFound() {
   return (

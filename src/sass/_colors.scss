@@ -11,6 +11,13 @@ $bg-default-color: #001C2E;
 // Couleur des gros titres
 $title-h-color: #e8f1f9;
 
+            // Scrollbar --------------------------------------------------------------------------------------------------------------------------------------
+
+            // Couleur de la barre de scroll
+            $color-srcollbar: #0d888e;
+
+            // Couleur du hover de la barre de scroll
+            $hover-color-srcollbar: #0dac8b;
 
 
 
@@ -69,6 +76,18 @@ $hover-color-lien-propos: #0dac8b;
 $bg-profil: #0d888e;
 
 
+            // Page--A propos de moi // Composant Squares --------------------------------------------------------------------------------------------------------------------------------------
+
+            // Couleur du premier carré
+            $bg-color-square-one: #157562;
+
+            // Couleur du premier carré
+            $bg-color-square-two: #16a387;
+
+            // Couleur du premier carré
+            $bg-color-square-three: #36dbba;
+
+
 
 
 // Page--Menu Projects --------------------------------------------------------------------------------------------------------------------------------------
@@ -95,3 +114,17 @@ $hover-color-lien-project: #0dac8b;
 
 // Couleur du soulignement des liens
 $color-hover-underline: #0dac8b;
+
+
+            // Page--Project / Composant Bouton--------------------------------------------------------------------------------------------------------------------------------------
+
+            // Couleur du texte des boutons Précedent et Suivant
+            $color-text-button: #fff;
+
+            // Couleur du hover du texte des boutons Précedent et Suivant
+            $color-hover-text-button: #0dac8b;
+
+// Animation des transition de pages --------------------------------------------------------------------------------------------------------------------------------------
+
+// Couleur du soulignement du titre h2
+$bg-transition-page: #49858D;

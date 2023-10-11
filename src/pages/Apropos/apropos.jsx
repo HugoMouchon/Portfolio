@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import './apropos.scss';
-import profil from '../../img/moi.png'
+import profil from '../../img/moi.png';
 import Navbar from '../../components/Navbar/navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
@@ -11,15 +11,17 @@ import transitionRight from "../../Animation/transitionRight";
 import Squares from "../../components/Squares/squares";
 
 function Apropos() {
+    // Références pour les éléments à animer
     const cvRef = useRef(null);
     const presentationRef = useRef(null);
     const titreRef = useRef(null);
     const profilRef = useRef(null);
 
+    // Vérification de la taille de l'écran pour la réactivité
     const isTablet = window.innerWidth <= 768;
     const isPhone = window.innerWidth <= 480;
 
-
+    // Utilisation du Hook 'useEffect' pour déclencher les animations en fonction de la taille de l'écran
     useEffect(() => {
         const cvElement = cvRef.current;
         const presentationElement = presentationRef.current;
@@ -27,20 +29,18 @@ function Apropos() {
         const profilElement = profilRef.current;
 
         if (isTablet || isPhone) {
-
+            // Animer les éléments pour les écrans de tablette et de téléphone
             fadeInProfilResponsive(profilElement);
             fadeInTitleResponsive(titreElement);
             fadeInPresentationResponsive(presentationElement);
             fadeInCvResponsive(cvElement);
-
         } else {
-
+            // Animer les éléments pour les écrans de bureau
             fadeInTitle(titreElement);
             fadeInPresentation(presentationElement);
             fadeInProfil(profilElement);
             fadeInCv(cvElement);
         }
-
     }, [isTablet, isPhone]);
 
     return (
@@ -78,4 +78,4 @@ function Apropos() {
     );
 }
 
-export default transitionRight(Apropos);
+export default transitionRight(Apropos); // Export du composant avec un effet de transition de droite à gauche

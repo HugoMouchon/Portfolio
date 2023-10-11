@@ -5,6 +5,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function ProjectDescription(data) {
 
+  // Accès aux données du projet afin de les afficher
   const { title, categories, year, description, websiteLink } = data.project;
 
 
@@ -51,7 +52,6 @@ export default function ProjectDescription(data) {
           </div>
 
           <div className='website'>
-
             <a href={websiteLink} target='blank'>Accéder au site
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}

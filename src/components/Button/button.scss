@@ -4,12 +4,10 @@
 // button.scss
 .button {
     text-decoration: none;
-    color: white ;
+    color: c.$color-text-button ;
     font-size: 1.9rem;
 
     &:hover {
-        color: #0dac8b !important;
-      }
-    
-  }
-
+        color: c.$color-hover-text-button !important;
+    }
+}

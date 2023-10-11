@@ -9,20 +9,23 @@ import linkedin from "../../icones/linkedin.svg";
 import behance from '../../icones/behance.svg';
 import tree from "../../img/tree.svg";
 
-
 function Navbar() {
+  // État pour gérer l'ouverture et la fermeture du menu
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Gestion du basculement du menu
   const menuToggleHandler = () => {
-    setMenuOpen((p) => !p);
+    setMenuOpen((prevState) => !prevState);
   };
 
+  // Gestion de la fermeture du menu avec la touche "Echape"
   const handleEscapeKey = (event) => {
     if (event.key === "Escape") {
       setMenuOpen(false);
     }
   };
 
+  // Utilisation de useEffect pour ajouter et supprimer l'écouteur d'événement
   useEffect(() => {
     window.addEventListener("keydown", handleEscapeKey);
 

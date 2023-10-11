@@ -1,23 +1,39 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./menuProjects.scss";
-import Navbar from "../../components/Navbar/navbar";
-import pokemon from "../../img/pokemon.jpg";
+import React, { useEffect, useRef, useState } from "react"; // Importation des modules React nécessaires
+import "./menuProjects.scss"; // Importation du fichier de styles
+import Navbar from "../../components/Navbar/navbar"; // Importation du composant Navbar
+import pokemon from "../../img/pokemon.jpg"; // Importation des images de projets
 import cinema from "../../img/cinema.jpg";
 import countries from "../../img/countries.jpg";
 import ioprod from "../../img/ioprod.jpg";
 import wedding from "../../img/wedding.jpg";
-import { fadeInHeadTitle, fadeInHeadSeparator, fadeInProjectPokedex, fadeInProjectWatowatch, fadeInProjectBrand, fadeInProjectIoprod, fadeInProjectWedding, fadeInPokedexSeparator, fadeInWatowatchSeparator, fadeInBrandSeparator, fadeInIoprodSeparator, fadeInWeddingSeparator, animateImageFromLeftToRight } from './animation';
-import { Link } from "react-router-dom";
-import transitionLeft from "../../Animation/transitionLeft";
-
+// Importation des fonctions d'animation depuis un fichier externe
+import {
+  fadeInHeadTitle,
+  fadeInHeadSeparator,
+  fadeInProjectPokedex,
+  fadeInProjectWatowatch,
+  fadeInProjectBrand,
+  fadeInProjectIoprod,
+  fadeInProjectWedding,
+  fadeInPokedexSeparator,
+  fadeInWatowatchSeparator,
+  fadeInBrandSeparator,
+  fadeInIoprodSeparator,
+  fadeInWeddingSeparator,
+  animateImageFromLeftToRight
+} from './animation'; 
+import { Link } from "react-router-dom"; // Importation du composant Link de React Router
+import transitionLeft from "../../Animation/transitionLeft"; // Importation de l'effet de transition
 
 function MenuProjects() {
+  // Définition des états locaux pour contrôler l'affichage des images des projets
   const [showPokemonImage, setShowPokemonImage] = useState(false);
   const [showCinemaImage, setShowCinemaImage] = useState(false);
   const [showBrandImage, setShowBrandImage] = useState(false);
   const [showIoprodImage, setShowIoprodImage] = useState(false);
   const [showWeddingImage, setShowWeddingImage] = useState(false);
 
+  // Fonctions pour gérer le survol de la souris et modifier les états
   const handleMouseEnter = (imageSetter) => {
     imageSetter(true);
   };
@@ -26,7 +42,7 @@ function MenuProjects() {
     imageSetter(false);
   };
 
-
+  // Utilisation de useRef pour accéder aux éléments du DOM
   const headTitleRef = useRef(null);
   const headSeparatorTitleRef = useRef(null);
   const headSeparatorPokedexRef = useRef(null);
@@ -41,7 +57,7 @@ function MenuProjects() {
   const projectWeddingRef = useRef(null);
   const projectLeftImageRef = useRef(null);
 
-
+  // Premier effet : déclenche des animations lors du chargement initial de la page
   useEffect(() => {
     const headTitleElement = headTitleRef.current;
     const headSeparatorTitleElement = headSeparatorTitleRef.current;
@@ -56,6 +72,7 @@ function MenuProjects() {
     const projectIoprodElement = projectIoprodRef.current;
     const projectWeddingElement = projectWeddingRef.current;
 
+    // Appel des fonctions d'animation pour chaque élément
     fadeInHeadTitle(headTitleElement);
     fadeInHeadSeparator(headSeparatorTitleElement);
     fadeInProjectPokedex(projectPokedexElement);
@@ -70,9 +87,10 @@ function MenuProjects() {
     fadeInWeddingSeparator(headSeparatorWeddingElement);
   }, [])
 
+  // Deuxième effet : anime l'image qui glisse de gauche à droite lors du survol de la souris
   useEffect(() => {
     const projectLeftImageElement = projectLeftImageRef.current;
-    // Utilisez la fonction d'animation pour animer l'image
+    // Utilisation de la fonction d'animation pour animer l'image
     animateImageFromLeftToRight(projectLeftImageElement);
   });
 
@@ -218,4 +236,4 @@ function MenuProjects() {
   );
 }
 
-export default transitionLeft(MenuProjects);
+export default transitionLeft(MenuProjects); // Export du composant avec un effet de transition de gauche à droite

@@ -1,6 +1,7 @@
+// Utilisation de la dépendance 'Gsap' qui permet de créer des animations
 import gsap from 'gsap';
 
-// Animation de l'image "profil"
+// Animation de l'image "profil" pour téléphone et tablette
 const fadeInProfilResponsive = (element) => {
     gsap.fromTo(
         element,
@@ -9,7 +10,7 @@ const fadeInProfilResponsive = (element) => {
     );
 };
 
-// Animation du titre
+// Animation du titre pour téléphone et tablette
 const fadeInTitleResponsive = (element) => {
     gsap.fromTo(
         element,
@@ -18,7 +19,7 @@ const fadeInTitleResponsive = (element) => {
     );
 };
 
-// Animation de la présentation
+// Animation de la présentation pour téléphone et tablette
 const fadeInPresentationResponsive = (element) => {
     gsap.fromTo(
         element,
@@ -27,7 +28,7 @@ const fadeInPresentationResponsive = (element) => {
     );
 };
 
-// Animation du lien pour télécharger le Curriculum Vitae
+// Animation du lien pour télécharger le Curriculum Vitae pour téléphone et tablette
 const fadeInCvResponsive = (element) => {
     gsap.fromTo(
         element,

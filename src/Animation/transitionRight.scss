@@ -1,9 +1,12 @@
+// Appel du fichier partiel "Colors"
+@use '../sass/colors' as c;
+
 .slide-in {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #0d888e;
+    background: c.$bg-transition-page;
     transform-origin: bottom;
 }

@@ -1,3 +1,4 @@
+// imoortation du fichier partiel sass "colors"
 @use './sass/colors' as c;
 
 * {
@@ -32,10 +33,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #0d888e; /* Couleur de la poignée de la barre de défilement */
+    background: c.$color-srcollbar; /* Couleur de la poignée de la barre de défilement */
     border-radius: 4px; /* Arrondi de la poignée */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #0dac8b; /* Couleur de la poignée au survol */
+    background: c.$hover-color-srcollbar; /* Couleur de la poignée au survol */
 }

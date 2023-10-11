@@ -1,6 +1,7 @@
 import React from 'react'
 import "./squares.scss";
 
+// Carrés animés derrière la photo de profil dans la page "A propos"
 export default function Squares() {
     return (
         <>

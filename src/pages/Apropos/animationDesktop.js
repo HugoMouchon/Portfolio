@@ -1,7 +1,8 @@
+// Utilisation de la dépendance 'Gsap' qui permet de créer des animations
 import gsap from 'gsap';
 
 
-// Animation du nom du pays
+// Animation du titre
 const fadeInTitle = (element) => {
     gsap.fromTo(
         element,
@@ -10,7 +11,7 @@ const fadeInTitle = (element) => {
     );
 };
 
-// Animation du text continent
+// Animation du paragraphe "description"
 const fadeInPresentation = (element) => {
     gsap.fromTo(
         element,
@@ -19,7 +20,7 @@ const fadeInPresentation = (element) => {
     );
 };
 
-// Animation du texte "langues parlées"
+// Animation de l'image profil
 const fadeInProfil = (element) => {
     gsap.fromTo(
         element,
@@ -28,7 +29,7 @@ const fadeInProfil = (element) => {
     );
 };
 
-// Animation de la card ItemCountry
+// Animation de lien de téléchargement de mon CV
 const fadeInCv = (element) => {
     gsap.fromTo(
         element,

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "./transitionLeft.scss";
 
+// Animation de page de la gauche vers la droite via la dépendance "framer-motion"
 const transitionLeft = (OgComponent) => {
     return () => (
         <>

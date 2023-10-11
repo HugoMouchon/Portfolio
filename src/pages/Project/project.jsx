@@ -11,20 +11,22 @@ import ProjectDescription from "../../components/ProjectDescription/projectDescr
 import projectData from "./projectData.json";
 import ProjectList from "../../components/ProjectList/projectList";
 import Footer from "../../components/Footer/footer";
-import transitionCenter from "../../Animation/transitionCenter";
+import transitionTop from "../../Animation/transitionTop";
 import { fadeInImageHeader, fadeInTitleDescription, fadeInDescription, fadeInTitleProject, fadeInImageProject } from "./animation";
 import Button from "../../components/Button/button";
 
-
 function Project() {
+  // Récupérer le nom du projet à partir des paramètres de l'URL
   const { name } = useParams();
 
+  // Références pour les éléments DOM que nous souhaitons animer
   const imageHeaderRef = useRef(null);
   const titleDescriptionRef = useRef(null);
   const descriptionProjectRef = useRef(null);
   const titleProjectRef = useRef(null);
   const imageProjectRef = useRef(null);
 
+  // Utiliser useEffect pour déclencher les animations lorsque le composant est monté
   useEffect(() => {
     const animateElement = (element, animation) => {
       if (element && animation) {
@@ -32,6 +34,7 @@ function Project() {
       }
     };
 
+    // Appliquer différentes animations aux éléments avec les références spécifiées
     animateElement(imageHeaderRef.current, fadeInImageHeader);
     animateElement(titleDescriptionRef.current, fadeInTitleDescription);
     animateElement(descriptionProjectRef.current, fadeInDescription);
@@ -39,12 +42,15 @@ function Project() {
     animateElement(imageProjectRef.current, fadeInImageProject);
   }, []);
 
+  // Vérifier si le projet spécifié dans les paramètres de l'URL existe dans les données du projet
   if (!(name in projectData)) {
     return <div>Projet non trouvé</div>;
   }
 
+  // Obtenir les données du projet actuel
   const project = projectData[name];
 
+  // Sélectionner l'image en fonction du nom du projet
   let currentImage;
 
   if (name === "Pokedex") {
@@ -59,9 +65,11 @@ function Project() {
     currentImage = wedding;
   }
 
-  const projects = Object.keys(projectData); // Obtenez la liste de tous les projets
-  const currentIndex = projects.indexOf(name); // Trouvez l'index du projet actuel
+  // Obtenir la liste de tous les projets et l'index du projet actuel
+  const projects = Object.keys(projectData);
+  const currentIndex = projects.indexOf(name);
 
+  // Fonctions pour gérer le passage aux projets précédents et suivants
   const handlePreviousClick = () => {
     const previousIndex = (currentIndex - 1 + projects.length) % projects.length;
     const previousProjectName = projects[previousIndex];
@@ -75,7 +83,6 @@ function Project() {
     window.scrollTo(0, 0);
     window.location.href = `/Project/${nextProjectName}`;
   };
-
 
   return (
     <div className="project-page">
@@ -102,7 +109,6 @@ function Project() {
           </div>
         </div>
 
-
         <div className="footer-container">
           <Footer />
         </div>
@@ -111,4 +117,4 @@ function Project() {
   );
 }
 
-export default transitionCenter(Project);
+export default transitionTop(Project); // Export du composant avec un effet de transition du haut vers le bas

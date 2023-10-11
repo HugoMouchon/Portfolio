@@ -6,9 +6,8 @@ import { Link } from 'react-router-dom';
 import { fadeInProjet, fadeInPropos, fadeInSubtitle, fadeInSubtitle2, fadeInTitle, zoomInAndOut } from './animation';
 import ListStackLanguages from '../../components/ListStackLanguages/listStackLanguages';
 
-
 function Accueil() {
-
+    // Déclaration des useRef permettant de cibler les éléments à animer
     const videoElementRef = useRef(null);
     const titreElementRef = useRef(null);
     const sousTitreElementRef = useRef(null);
@@ -16,13 +15,16 @@ function Accueil() {
     const projetElementRef = useRef(null);
     const proposElementRef = useRef(null);
 
+    // Utilisation du Hook 'useEffect' pour déclencher les animations lors du chargement
     useEffect(() => {
+        // Fonction pour animer un élément avec une animation spécifique
         const animateElement = (element, animation) => {
             if (element && animation) {
                 animation(element);
             }
         };
 
+        // Animer chaque élément avec son animation respective (une seule fois)
         animateElement(videoElementRef.current, zoomInAndOut);
         animateElement(titreElementRef.current, fadeInTitle);
         animateElement(sousTitreElementRef.current, fadeInSubtitle);

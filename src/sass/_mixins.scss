@@ -1,25 +1,26 @@
 // mixins.scss
 
+// Cette fonction convertit une valeur en pixels en une valeur en em.
 @function calculate-em-value($px-value) {
-    $em-value: $px-value / 16px;
-    @return #{$em-value}em;
-  }
-  
-  @mixin breakpoint($point) {
-    @if $point == phone {
-      @media (max-width: calculate-em-value(767px)) {
-        @content;
+  $em-value: $px-value / 16px;
+  @return #{$em-value}em; 
+}
+
+// Cette mixin génère des règles CSS conditionnelles basées sur les points de rupture (breakpoints) du responsive design.
+@mixin breakpoint($point) {
+  @if $point == phone {  // Responsive pour le téléphone ( <= 767px )
+      @media (max-width: calculate-em-value(767px)) { 
+          @content; 
       }
-    }
-    @else if $point == tablet {
+  }
+  @else if $point == tablet {  // Responsive pour la tabletta ( >= 768px )
       @media (min-width: calculate-em-value(768px)) and (max-width: calculate-em-value(1023px)) {
-        @content;
+          @content; 
       }
-    }
-    @else if $point == desktop {
-      @media (min-width: calculate-em-value(1024px)) {
-        @content;
-      }
-    }
-    // Ajoutez d'autres breakpoints au besoin
   }
+  @else if $point == desktop {  // Responsive pour l'ordianteur ( >= 1024px )
+      @media (min-width: calculate-em-value(1024px)) {  
+          @content;  
+      }
+  }
+}

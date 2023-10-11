@@ -5,7 +5,7 @@ import github from '../../icones/github.svg';
 import linkedin from '../../icones/linkedin.svg';
 import behance from '../../icones/behance.svg';
 
-
+// Composant de pied de page avec les informations Email, liens vers mes différents réseaux sociaux et phrase de copyright
 function Footer() {
     return (
         <footer className="footer">
