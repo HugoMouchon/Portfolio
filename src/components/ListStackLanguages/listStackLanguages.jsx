@@ -9,6 +9,7 @@ import sass from "../../icones/sass.svg";
 import wordpress from "../../icones/wordpress.svg";
 import { fadeInCss, fadeInGithub, fadeInHtml, fadeInJs, fadeInReact, fadeInSass, fadeInWordpress } from './animation';
 
+
 export default function ListStackLanguages() {
     // Références pour les éléments HTML afin de les animer
     const htmlRef = useRef(null);

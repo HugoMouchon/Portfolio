@@ -46,9 +46,19 @@
         z-index: 100;
 
         @include m.breakpoint(phone) {
-            justify-content: center;
-            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: center;
+            padding: 30px 25px 0 25px;
         }
+
+        @include m.breakpoint(tablet) {
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: center;
+            padding: 40px 0px 0 0;
+        }
+
 
         &__nav {
             top: 0;
