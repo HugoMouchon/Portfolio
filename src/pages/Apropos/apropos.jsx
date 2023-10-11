@@ -72,7 +72,7 @@ function Apropos() {
                 {/* Carré rotatif derrière la photo de profil */}
                 <Squares />
                 {/* Photo de profil */}
-                <img src={profil} alt="profil de Hugo MOUCHON, jeune développeur web spécialisé dans le front-end" />
+                <img src={profil} alt="profil de Hugo MOUCHON, jeune développeur web spécialisé dans le front-end" /> 
             </div>
         </section>
     );

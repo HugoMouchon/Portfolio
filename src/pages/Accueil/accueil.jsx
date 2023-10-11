@@ -8,6 +8,7 @@ import ListStackLanguages from '../../components/ListStackLanguages/listStackLan
 
 
 function Accueil() {
+
     const videoElementRef = useRef(null);
     const titreElementRef = useRef(null);
     const sousTitreElementRef = useRef(null);

@@ -1,0 +1,48 @@
+// Appel du fichier partiel "Mixins" pour le responsive
+@use '../../sass/mixins.scss' as m;
+
+.notFound__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .notFound__nav {
+        width: 100%;
+
+        @include m.breakpoint(tablet) {
+            width: 90%;
+        }
+        
+        @include m.breakpoint(phone) {
+            width: 100%;
+        }
+    }
+
+    .notFound__cat {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+
+        @include m.breakpoint(tablet) {
+            width: 100%;
+        }
+
+        @include m.breakpoint(phone) {
+            padding-right: 0;
+            width: 100%;
+        }
+    }
+
+    .notFound__foo {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        @include m.breakpoint(phone) {
+            height: 20%;
+        }
+    }
+}

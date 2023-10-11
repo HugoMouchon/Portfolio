@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuProjects from "./pages/MenuProjects/menuProjects";
 import Project from "./pages/Project/project";
 import Home from "./pages/Home/Home";
-import NotFound from "./pages/NotFound/NotFound";
+import NotFound from "./pages/NotFound/notFound";
 import Apropos from "./pages/Apropos/apropos";
 import { AnimatePresence } from "framer-motion";
 

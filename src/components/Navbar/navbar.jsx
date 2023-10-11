@@ -9,6 +9,7 @@ import linkedin from "../../icones/linkedin.svg";
 import behance from '../../icones/behance.svg';
 import tree from "../../img/tree.svg";
 
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 

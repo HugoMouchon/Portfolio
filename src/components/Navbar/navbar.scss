@@ -4,6 +4,7 @@
 // Appel du fichier partiel "Colors"
 @use '../../sass/colors' as c;
 
+
 // Font Poppins
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -69,7 +70,7 @@
             transition: 0.2s ease transform;
             opacity: 0.9;
 
-            
+
             ul {
                 list-style: none;
                 padding: 0;
