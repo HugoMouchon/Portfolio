@@ -183,6 +183,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 150px;
+            
 
             @include m.breakpoint(tablet) {
                 display: flex;

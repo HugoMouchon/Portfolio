@@ -51,7 +51,7 @@ function Apropos() {
                 <h3 ref={titreRef}>À Propos de moi</h3>
 
                 <p ref={presentationRef}>Je me présente, je m'appelle MOUCHON Hugo......HOP HOP HOP 🤚🛑 <br />
-                    Pour vous lecteur attentionné, ce que vous vous apprêtez à lire ici n'est pas la biographie du meilleur codeur sachant coder avec spécialement le petit orteil de pied et contre tout attente, je ne maitrise pas non plus 38 languages de programmation, cependant je suis bel est bien un futur candidat serviable, calme et dévoué et je ne vais pas vous expliquez pourquoi je suis mais plutôt qui je suis.<br /><br />
+                    Pour vous lecteur attentionné, ce que vous vous apprêtez à lire ici n'est pas la biographie du meilleur codeur sachant coder avec spécialement le petit orteil de pied et contre tout attente, je ne maitrise pas non plus 38 languages de programmation, cependant je suis bel est bien un futur candidat serviable, calme et dévoué et je ne vais pas vous expliquer pourquoi je suis mais plutôt qui je suis.<br /><br />
 
                     J'ai une appétence particulière pour le 7ème art, notamment pour ses bandes originales dont je me noie les oreilles abondamment lors de mes sessions de codage ou lors de sessions de nettoyage à la #MmeDoubtfire <br /><br />
 
