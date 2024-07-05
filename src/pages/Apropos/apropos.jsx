@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { fadeInCv, fadeInPresentation, fadeInProfil, fadeInTitle } from "./animationDesktop";
 import { fadeInCvResponsive, fadeInPresentationResponsive, fadeInProfilResponsive, fadeInTitleResponsive } from "./animationTablet&Phone";
-import cv from '../../img/curriculumVitae.pdf';
+import cv from '../../img/cv2.pdf';
 import transitionRight from "../../Animation/transitionRight";
 import Squares from "../../components/Squares/squares";
 
@@ -58,8 +58,6 @@ function Apropos() {
                     Denis Villeneuve, Guy Ritchie, Christopher Nolan, Bong Joon-ho, Martin McDonagh, David Fincher... si ces noms te parlent alors nous venons du même univers, sinon je serais ravi de vous convaincre de regarder quelques chefs d'oeuvres parmi ces grands noms. <a className="snatch" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=26251.html" target="blank">Comme Snatch par exemple</a>
 
                     <br /><br />Comme souvent avec les développeurs / geeks, je suis né avec les jeux vidéo ! Au dela de toute mauvaise croyance, cet art m'a beaucoup apporté et m'apporte toujours autant.  <br /> En fin de compte, je suis quelqu'un qui croit en la capacité de l'être humain à s'améliorer, et je pense que nos divers univers individuels devraient nous rapprocher les uns des autres.<br />
-
-                    <br /> #VousVoulezUnWhisky?
 
                 </p>
 
